@@ -1,0 +1,417 @@
+<template>
+  <div>
+    <!-- ===== HERO ===== -->
+    <section class="relative bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-full h-full"
+          style="background-image: radial-gradient(circle at 20% 50%, #86efac 0%, transparent 50%), radial-gradient(circle at 80% 20%, #4ade80 0%, transparent 40%);" />
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div class="max-w-3xl">
+          <span class="badge mb-6 bg-brand-600/30 text-brand-200 border border-brand-500/30">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            Bruxelles · Toute la Belgique
+          </span>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+            Végétalisez votre toiture,<br>
+            <span class="text-brand-300">valorisez votre bâtiment</span>
+          </h1>
+          <p class="text-lg md:text-xl text-brand-100 leading-relaxed mb-10 max-w-2xl">
+            ToitureVerte est votre spécialiste en végétalisation de toitures à Bruxelles et en Belgique. Toitures extensives, semi-intensives, jardins sur toiture — nous concevons et installons des toits verts durables et esthétiques.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <NuxtLink to="/contact" class="btn-primary text-base px-8 py-4 shadow-lg shadow-brand-900/50">
+              Demander un devis gratuit
+            </NuxtLink>
+            <NuxtLink to="/services" class="btn-secondary text-base px-8 py-4">
+              Découvrir nos services
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+      <!-- Wave separator -->
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+          <path d="M0 80L60 73.3C120 66.7 240 53.3 360 46.7C480 40 600 40 720 46.7C840 53.3 960 66.7 1080 66.7C1200 66.7 1320 53.3 1380 46.7L1440 40V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="white"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="py-12 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div v-for="stat in stats" :key="stat.label">
+            <p class="text-4xl font-extrabold text-brand-600">{{ stat.value }}</p>
+            <p class="text-sm text-gray-500 mt-1 font-medium">{{ stat.label }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="py-20 bg-white" aria-labelledby="benefits-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+          <span class="badge mb-3">Pourquoi une toiture verte ?</span>
+          <h2 id="benefits-title" class="section-title">Les avantages d'un toit végétalisé</h2>
+          <p class="section-subtitle">
+            Une toiture verte n'est pas qu'esthétique : c'est un investissement durable aux bénéfices multiples pour votre bâtiment et l'environnement.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <article v-for="benefit in benefits" :key="benefit.title" class="card text-center group">
+            <div class="w-14 h-14 bg-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-600 transition-colors duration-300">
+              <span class="text-2xl" role="img" :aria-label="benefit.title">{{ benefit.icon }}</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ benefit.title }}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">{{ benefit.description }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES OVERVIEW ===== -->
+    <section class="py-20 bg-gray-50" aria-labelledby="services-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+          <span class="badge mb-3">Ce que nous proposons</span>
+          <h2 id="services-title" class="section-title">Nos services de végétalisation</h2>
+          <p class="section-subtitle">
+            Du simple toit extensif au jardin suspendu, ToitureVerte accompagne chaque projet de A à Z en Belgique.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <article v-for="service in servicesOverview" :key="service.title"
+            class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 group">
+            <div :class="`h-3 ${service.color}`" />
+            <div class="p-6">
+              <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+                <span class="text-xl" role="img" :aria-label="service.title">{{ service.icon }}</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{{ service.title }}</h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-5">{{ service.description }}</p>
+              <ul class="space-y-1.5 mb-6">
+                <li v-for="feat in service.features" :key="feat" class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  {{ feat }}
+                </li>
+              </ul>
+              <NuxtLink to="/services" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                En savoir plus
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </NuxtLink>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="py-20 bg-white" aria-labelledby="process-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+          <span class="badge mb-3">Notre méthode</span>
+          <h2 id="process-title" class="section-title">Un projet clé en main, étape par étape</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+          <div class="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-brand-200 via-brand-400 to-brand-200" aria-hidden="true" />
+          <div v-for="(step, index) in process" :key="step.title" class="text-center relative">
+            <div class="w-16 h-16 bg-brand-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold text-xl shadow-lg shadow-brand-200">
+              {{ index + 1 }}
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">{{ step.title }}</h3>
+            <p class="text-sm text-gray-600">{{ step.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="py-20 bg-brand-800 text-white" aria-labelledby="why-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-600/30 text-brand-200 text-sm font-medium rounded-full border border-brand-500/30 mb-4">
+              Notre engagement
+            </span>
+            <h2 id="why-title" class="text-3xl md:text-4xl font-bold mb-6">
+              Pourquoi choisir ToitureVerte ?
+            </h2>
+            <p class="text-brand-100 leading-relaxed mb-8">
+              Basés à Bruxelles, nous intervenons dans toute la Belgique avec une expertise reconnue en végétalisation de toitures depuis plus de 10 ans. Chaque projet est unique, chaque solution est sur-mesure.
+            </p>
+            <NuxtLink to="/contact" class="btn-primary bg-white text-brand-800 hover:bg-brand-50">
+              Discutons de votre projet
+            </NuxtLink>
+          </div>
+          <div class="space-y-4">
+            <div v-for="reason in reasons" :key="reason.title"
+              class="flex gap-4 p-5 bg-brand-700/50 rounded-xl border border-brand-600/30">
+              <div class="w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center shrink-0">
+                <span class="text-lg" role="img" :aria-label="reason.title">{{ reason.icon }}</span>
+              </div>
+              <div>
+                <h3 class="font-bold text-white mb-1">{{ reason.title }}</h3>
+                <p class="text-sm text-brand-200">{{ reason.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="py-20 bg-gray-50" aria-labelledby="faq-title">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="badge mb-3">Questions fréquentes</span>
+          <h2 id="faq-title" class="section-title">Tout savoir sur les toitures vertes</h2>
+        </div>
+        <div class="space-y-3">
+          <details v-for="faq in faqs" :key="faq.question"
+            class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+            <summary class="flex items-center justify-between p-5 cursor-pointer list-none font-semibold text-gray-900 hover:text-brand-700 transition-colors">
+              <span>{{ faq.question }}</span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              {{ faq.answer }}
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-gradient-to-r from-brand-600 to-brand-700 rounded-3xl p-10 md:p-14 shadow-xl shadow-brand-200">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            Prêt à transformer votre toiture ?
+          </h2>
+          <p class="text-brand-100 text-lg mb-8 max-w-xl mx-auto">
+            Contactez-nous pour une étude de faisabilité gratuite et sans engagement. Nous intervenons à Bruxelles et dans toute la Belgique.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <NuxtLink to="/contact" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-brand-700 font-bold rounded-xl hover:bg-brand-50 transition-colors shadow-lg">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              Devis gratuit
+            </NuxtLink>
+            <a href="tel:+3225551234" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-brand-700 transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              +32 2 555 12 34
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Végétalisation de toitures à Bruxelles & Belgique',
+  description: 'ToitureVerte, spécialiste en végétalisation de toitures à Bruxelles et en Belgique. Toitures extensives, semi-intensives, jardins sur toiture. Devis gratuit.',
+  ogTitle: 'ToitureVerte – Végétalisation de toitures à Bruxelles',
+  ogDescription: 'Spécialiste en toitures vertes en Belgique. Isolation, gestion des eaux pluviales, biodiversité. Devis gratuit.',
+  ogType: 'website',
+  ogUrl: 'https://www.toitureverte.be',
+  twitterCard: 'summary_large_image',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/' }],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'LocalBusiness',
+            '@id': 'https://www.toitureverte.be/#business',
+            name: 'ToitureVerte',
+            description: 'Spécialiste en végétalisation de toitures à Bruxelles et en Belgique',
+            url: 'https://www.toitureverte.be',
+            telephone: '+3225551234',
+            email: 'info@toitureverte.be',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Bruxelles',
+              addressLocality: 'Bruxelles',
+              postalCode: '1000',
+              addressCountry: 'BE',
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 50.8503,
+              longitude: 4.3517,
+            },
+            areaServed: {
+              '@type': 'Country',
+              name: 'Belgique',
+            },
+            priceRange: '€€',
+            openingHoursSpecification: [
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                opens: '08:00',
+                closes: '18:00',
+              },
+            ],
+            sameAs: [
+              'https://www.facebook.com/toitureverte',
+              'https://www.instagram.com/toitureverte',
+              'https://www.linkedin.com/company/toitureverte',
+            ],
+          },
+          {
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Qu\'est-ce qu\'une toiture verte extensive ?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Une toiture verte extensive est le type de végétalisation le plus léger (poids de 50 à 150 kg/m²). Elle est composée d\'une couche de substrat mince de 5 à 15 cm et de végétaux résistants comme les sedums. Elle nécessite peu d\'entretien et convient à la majorité des toitures plates en Belgique.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Quel est le prix d\'une toiture végétalisée en Belgique ?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Le prix d\'une toiture verte en Belgique varie selon le type : entre 40 et 80 €/m² pour une toiture extensive, entre 80 et 150 €/m² pour une semi-intensive, et entre 150 et 300 €/m² ou plus pour une toiture intensive avec jardin. Contactez-nous pour un devis personnalisé.',
+                },
+              },
+            ],
+          },
+        ],
+      }),
+    },
+  ],
+})
+
+const stats = [
+  { value: '10+', label: 'Années d\'expérience' },
+  { value: '350+', label: 'Projets réalisés' },
+  { value: '85 000', label: 'm² végétalisés' },
+  { value: '100%', label: 'Clients satisfaits' },
+]
+
+const benefits = [
+  {
+    icon: '🌡️',
+    title: 'Isolation thermique',
+    description: 'Réduisez votre consommation énergétique. Une toiture verte améliore l\'isolation de votre bâtiment en été comme en hiver.',
+  },
+  {
+    icon: '💧',
+    title: 'Gestion des eaux',
+    description: 'Retenez jusqu\'à 90% des eaux pluviales, réduisant les risques d\'inondation et soulageant les réseaux d\'égouts de Bruxelles.',
+  },
+  {
+    icon: '🦋',
+    title: 'Biodiversité urbaine',
+    description: 'Créez un refuge pour les insectes et oiseaux en milieu urbain. Contribuez activement à la nature en ville.',
+  },
+  {
+    icon: '💰',
+    title: 'Valeur immobilière',
+    description: 'Une toiture végétalisée augmente la valeur de votre bien de 5 à 15% et améliore son attractivité sur le marché.',
+  },
+]
+
+const servicesOverview = [
+  {
+    title: 'Toiture Extensive',
+    icon: '🌿',
+    color: 'bg-brand-400',
+    description: 'Solution légère et économique, idéale pour les grandes surfaces inaccessibles. Peu d\'entretien, poids réduit.',
+    features: ['Substrat 5–15 cm', 'Sedums & mousses', 'Poids 50–150 kg/m²', 'Entretien minimal'],
+  },
+  {
+    title: 'Toiture Semi-Intensive',
+    icon: '🌸',
+    color: 'bg-earth-400',
+    description: 'Le compromis parfait entre légèreté et diversité végétale. Accessible, esthétique, avec une végétation variée.',
+    features: ['Substrat 15–25 cm', 'Vivaces & graminées', 'Poids 150–300 kg/m²', 'Entretien modéré'],
+  },
+  {
+    title: 'Toiture Intensive',
+    icon: '🏡',
+    color: 'bg-green-500',
+    description: 'Véritable jardin en hauteur, accessible et utilisable. Arbustes, arbres, espaces de détente possibles.',
+    features: ['Substrat > 30 cm', 'Arbustes & arbres', 'Poids > 300 kg/m²', 'Entretien régulier'],
+  },
+]
+
+const process = [
+  { title: 'Étude de faisabilité', description: 'Analyse de votre toiture : structure, pente, accessibilité, budget.' },
+  { title: 'Conception sur-mesure', description: 'Plans détaillés, choix des végétaux et des matériaux adaptés.' },
+  { title: 'Installation professionnelle', description: 'Pose par nos équipes certifiées à Bruxelles et en Belgique.' },
+  { title: 'Suivi & entretien', description: 'Contrats d\'entretien et suivi de la végétation sur le long terme.' },
+]
+
+const reasons = [
+  {
+    icon: '🏅',
+    title: 'Expertise certifiée',
+    description: 'Équipes formées aux normes belges et européennes. Membres de la fédération des toitures vertes.',
+  },
+  {
+    icon: '📐',
+    title: 'Solutions sur-mesure',
+    description: 'Chaque toiture est unique. Nous adaptons notre solution à la structure, au budget et à vos envies.',
+  },
+  {
+    icon: '🔧',
+    title: 'Service complet',
+    description: 'De la conception à l\'entretien, ToitureVerte assure un suivi complet de votre projet.',
+  },
+  {
+    icon: '🌍',
+    title: 'Engagement écologique',
+    description: 'Matériaux locaux et durables, végétaux adaptés au climat belge, bilan carbone positif.',
+  },
+]
+
+const faqs = [
+  {
+    question: 'Qu\'est-ce qu\'une toiture verte extensive ?',
+    answer: 'Une toiture verte extensive est le type de végétalisation le plus léger (50 à 150 kg/m²). Elle est composée d\'une couche de substrat de 5 à 15 cm et de végétaux résistants comme les sedums. Elle nécessite peu d\'entretien et convient à la majorité des toitures plates en Belgique.',
+  },
+  {
+    question: 'Quel est le prix d\'une toiture végétalisée en Belgique ?',
+    answer: 'Le coût varie selon le type : entre 40 et 80 €/m² pour une toiture extensive, entre 80 et 150 €/m² pour une semi-intensive, et entre 150 et 300 €/m² pour une toiture intensive. Ces prix incluent la fourniture et la pose. Nous offrons un devis gratuit et personnalisé.',
+  },
+  {
+    question: 'Ma toiture peut-elle supporter une végétalisation ?',
+    answer: 'La grande majorité des toitures plates peut accueillir une toiture verte. Nos experts réalisent une étude de faisabilité gratuite pour évaluer la capacité portante de votre structure, la pente et l\'état de l\'étanchéité existante.',
+  },
+  {
+    question: 'Existe-t-il des primes pour les toitures vertes en Belgique ?',
+    answer: 'Oui ! La Région de Bruxelles-Capitale propose des primes pour la végétalisation de toitures (jusqu\'à 30 €/m² sous conditions). La Région wallonne et flamande proposent également des aides. Nous vous aidons à identifier et demander les subsides disponibles.',
+  },
+  {
+    question: 'Combien de temps dure l\'installation d\'une toiture verte ?',
+    answer: 'L\'installation prend généralement 1 à 5 jours selon la superficie. Pour les grands projets commerciaux ou industriels, le délai peut être plus long. Nous planifions les travaux pour minimiser les perturbations.',
+  },
+  {
+    question: 'Intervenez-vous partout en Belgique ?',
+    answer: 'Oui, ToitureVerte intervient dans toute la Belgique : Bruxelles, Wallonie (Liège, Namur, Charleroi, Mons...) et Flandre (Anvers, Gand, Bruges, Louvain...). Nous nous déplaçons sans frais supplémentaires dans un rayon de 100 km de Bruxelles.',
+  },
+]
+</script>

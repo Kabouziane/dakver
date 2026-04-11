@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.toitureverte.be/sitemap.xml
+
+# Block admin / API routes
+Disallow: /api/
