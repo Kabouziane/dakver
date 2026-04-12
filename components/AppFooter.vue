@@ -101,7 +101,8 @@
 const navLinks = [
   { to: '/', label: 'Accueil' },
   { to: '/services', label: 'Services' },
-  { to: '/techniques', label: 'Techniques' },
+  { to: '/techniques', label: 'Techniques & Effets' },
+  { to: '/subsides', label: 'Subsides & Primes' },
   { to: '/realisations', label: 'Réalisations' },
   { to: '/contact', label: 'Contact' },
 ]

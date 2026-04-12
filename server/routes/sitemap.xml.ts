@@ -5,7 +5,8 @@ export default defineEventHandler((event) => {
   const urls = [
     { loc: '/', priority: '1.0', changefreq: 'weekly' },
     { loc: '/services', priority: '0.9', changefreq: 'monthly' },
-    { loc: '/techniques', priority: '0.8', changefreq: 'monthly' },
+    { loc: '/techniques', priority: '0.9', changefreq: 'monthly' },
+    { loc: '/subsides', priority: '0.9', changefreq: 'monthly' },
     { loc: '/realisations', priority: '0.8', changefreq: 'monthly' },
     { loc: '/contact', priority: '0.7', changefreq: 'yearly' },
   ]

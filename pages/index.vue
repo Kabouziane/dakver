@@ -403,7 +403,7 @@ const faqs = [
   },
   {
     question: 'Existe-t-il des primes pour les toitures vertes en Belgique ?',
-    answer: 'Oui ! La Région de Bruxelles-Capitale propose des primes pour la végétalisation de toitures (jusqu\'à 30 €/m² sous conditions). La Région wallonne et flamande proposent également des aides. Nous vous aidons à identifier et demander les subsides disponibles.',
+    answer: 'Oui ! La Région de Bruxelles-Capitale propose des primes jusqu\'à 50 000 € pour la végétalisation (30 €/m² pour les particuliers). La Wallonie et la Flandre offrent également des aides régionales et communales cumulables. La TVA peut être réduite à 6% et des prêts verts existent. Consultez notre guide complet des subsides.',
   },
   {
     question: 'Combien de temps dure l\'installation d\'une toiture verte ?',
