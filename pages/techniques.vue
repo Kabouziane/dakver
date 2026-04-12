@@ -4,7 +4,7 @@
     <section class="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav aria-label="Fil d'Ariane" class="flex items-center gap-2 text-sm text-brand-300 mb-6">
-          <NuxtLink :to="localePath('/')" class="hover:text-white transition-colors">Accueil</NuxtLink>
+          <NuxtLink to="/" class="hover:text-white transition-colors">Accueil</NuxtLink>
           <span>/</span>
           <span class="text-white font-medium">Techniques & Effets</span>
         </nav>
@@ -323,10 +323,10 @@
         <h2 class="text-3xl font-bold mb-4">Améliorez votre PEB avec une toiture verte</h2>
         <p class="text-brand-100 mb-8">Nos experts analysent votre situation et calculent l'impact précis sur votre certificat PEB. Étude gratuite et sans engagement.</p>
         <div class="flex flex-wrap justify-center gap-4">
-          <NuxtLink :to="localePath('/contact')" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
+          <NuxtLink to="/contact" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
             Étude PEB gratuite
           </NuxtLink>
-          <NuxtLink :to="localePath('/subsides')" class="btn-secondary text-base px-8 py-4">
+          <NuxtLink to="/subsides" class="btn-secondary text-base px-8 py-4">
             Voir les subsides disponibles
           </NuxtLink>
         </div>
@@ -336,8 +336,6 @@
 </template>
 
 <script setup lang="ts">
-const localePath = useLocalePath()
-
 useSeoMeta({
   title: 'Techniques, Effets Positifs & Impact PEB – Toiture Verte',
   description: 'Guide complet sur les techniques de toiture verte : structure, substrats, végétaux, effets sur isolation, eau, biodiversité, qualité de l\'air et impact sur le PEB en Belgique.',

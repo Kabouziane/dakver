@@ -4,7 +4,7 @@
     <section class="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav aria-label="Fil d'Ariane" class="flex items-center gap-2 text-sm text-brand-300 mb-6">
-          <NuxtLink :to="localePath('/')" class="hover:text-white transition-colors">Accueil</NuxtLink>
+          <NuxtLink to="/" class="hover:text-white transition-colors">Accueil</NuxtLink>
           <span>/</span>
           <span class="text-white font-medium">Réalisations</span>
         </nav>
@@ -136,7 +136,7 @@
       <div class="max-w-2xl mx-auto px-4">
         <h2 class="text-3xl font-bold mb-4">Votre projet, notre prochaine réalisation</h2>
         <p class="text-brand-100 mb-8">Rejoignez nos 350+ clients satisfaits à travers la Belgique.</p>
-        <NuxtLink :to="localePath('/contact')" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
+        <NuxtLink to="/contact" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
           Démarrer mon projet
         </NuxtLink>
       </div>
@@ -145,8 +145,6 @@
 </template>
 
 <script setup lang="ts">
-const localePath = useLocalePath()
-
 useSeoMeta({
   title: 'Nos Réalisations – Toitures Vertes en Belgique',
   description: 'Découvrez les réalisations de ToitureVerte : plus de 350 projets de végétalisation de toitures à Bruxelles, Liège, Gand et dans toute la Belgique.',
