@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "techniques": "Technieken & Effecten",
+    "subsidies": "Subsidies",
+    "portfolio": "Realisaties",
+    "contact": "Contact"
+  },
+  "common": {
+    "freeQuote": "Gratis offerte",
+    "learnMore": "Meer weten",
+    "contactUs": "Contacteer ons",
+    "startProject": "Mijn project starten",
+    "freeStudy": "Gratis haalbaarheidsstudie",
+    "freePEBStudy": "Gratis EPC-studie",
+    "subsidiesAnalysis": "Gratis analyse van beschikbare subsidies",
+    "allBelgium": "Brussel · Heel België",
+    "send": "Mijn offerte aanvragen",
+    "sending": "Verzenden...",
+    "successMsg": "Bedankt! Uw aanvraag is verzonden. Wij nemen binnen 24u contact met u op.",
+    "required": "verplicht",
+    "response24h": "Antwoord binnen 24 werkuren."
+  },
+  "home": {
+    "hero": {
+      "title": "Begroei uw dak,",
+      "titleAccent": "verhoog uw vastgoedwaarde",
+      "description": "ToitureVerte is uw specialist in dakbegroeining in Brussel en heel België. Extensieve, semi-intensieve dakbegroeningen en daktuinen — wij ontwerpen en installeren duurzame en esthetische groendaken.",
+      "cta1": "Gratis offerte aanvragen",
+      "cta2": "Onze diensten ontdekken"
+    },
+    "stats": [
+      { "value": "10+", "label": "Jaar ervaring" },
+      { "value": "350+", "label": "Gerealiseerde projecten" },
+      { "value": "85 000", "label": "m² begroend" },
+      { "value": "100%", "label": "Tevreden klanten" }
+    ],
+    "benefits": {
+      "badge": "Waarom een groendak?",
+      "title": "De voordelen van een begroend dak",
+      "subtitle": "Een groendak is meer dan esthetiek: het is een duurzame investering met meervoudige voordelen voor uw gebouw en het milieu.",
+      "items": [
+        { "icon": "🌡️", "title": "Thermische isolatie", "description": "Verminder uw energieverbruik. Een groendak verbetert de isolatie van uw gebouw in zomer én winter." },
+        { "icon": "💧", "title": "Waterbeheer", "description": "Houd tot 90% van het regenwater vast, verminder overstromingsrisico's en verlich het rioolstelsel." },
+        { "icon": "🦋", "title": "Stedelijke biodiversiteit", "description": "Creëer een toevluchtsoord voor insecten en vogels in de stad. Draag actief bij aan de natuur in de stad." },
+        { "icon": "💰", "title": "Vastgoedwaarde", "description": "Een begroeid dak verhoogt de waarde van uw eigendom met 5 tot 15% en verbetert de aantrekkelijkheid op de markt." }
+      ]
+    },
+    "servicesSection": {
+      "badge": "Wat wij aanbieden",
+      "title": "Onze dakbegroeiingsdiensten",
+      "subtitle": "Van eenvoudig extensief dak tot hangende tuin, ToitureVerte begeleidt elk project van A tot Z in België."
+    },
+    "processSection": {
+      "badge": "Onze werkwijze",
+      "title": "Een sleutelklaar project, stap voor stap",
+      "steps": [
+        { "title": "Haalbaarheidsstudie", "description": "Analyse van uw dak: structuur, helling, toegankelijkheid, budget." },
+        { "title": "Maatwerk ontwerp", "description": "Gedetailleerde plannen, keuze van planten en aangepaste materialen." },
+        { "title": "Professionele installatie", "description": "Uitvoering door onze gecertificeerde teams in Brussel en België." },
+        { "title": "Opvolging & onderhoud", "description": "Onderhoudscontracten en langdurige begeleiding van de begroeiing." }
+      ]
+    },
+    "why": {
+      "badge": "Onze belofte",
+      "title": "Waarom kiezen voor ToitureVerte?",
+      "description": "Gevestigd in Brussel, werken wij in heel België met meer dan 10 jaar erkende expertise in dakbegroeining. Elk project is uniek, elke oplossing is op maat.",
+      "cta": "Laten we uw project bespreken",
+      "items": [
+        { "icon": "🏅", "title": "Gecertificeerde expertise", "description": "Teams opgeleid volgens Belgische en Europese normen. Leden van de groendakfederatie." },
+        { "icon": "📐", "title": "Oplossingen op maat", "description": "Elk dak is uniek. Wij passen onze oplossing aan de structuur, het budget en uw wensen aan." },
+        { "icon": "🔧", "title": "Volledige service", "description": "Van ontwerp tot onderhoud zorgt ToitureVerte voor een volledige begeleiding van uw project." },
+        { "icon": "🌍", "title": "Ecologisch engagement", "description": "Lokale en duurzame materialen, planten aangepast aan het Belgisch klimaat, positieve koolstofvoetafdruk." }
+      ]
+    },
+    "faq": {
+      "badge": "Veelgestelde vragen",
+      "title": "Alles over groendaken",
+      "items": [
+        { "q": "Wat is een extensief groendak?", "a": "Een extensief groendak is het lichtste type dakbegroeining (50 tot 150 kg/m²). Het bestaat uit een substraatlaag van 5 tot 15 cm en robuuste planten zoals sedums. Het vereist weinig onderhoud en is geschikt voor de meeste platte daken in België." },
+        { "q": "Wat kost een begroend dak in België?", "a": "De kosten variëren per type: 40 tot 80 €/m² voor extensief, 80 tot 150 €/m² voor semi-intensief, en 150 tot 300 €/m² voor intensief. Inclusief levering en installatie. Wij bieden een gratis gepersonaliseerde offerte aan." },
+        { "q": "Kan mijn dak een begroeining ondersteunen?", "a": "De meeste platte daken kunnen een groendak dragen. Onze experts voeren een gratis haalbaarheidsstudie uit om de draagkracht van uw structuur, de helling en de staat van de bestaande waterdichting te beoordelen." },
+        { "q": "Bestaan er subsidies voor groendaken in België?", "a": "Ja! Het Brussels Gewest biedt premies tot 50.000 € aan (30 €/m² voor particulieren). Wallonië en Vlaanderen bieden ook gewestelijke en gemeentelijke steun aan die cumuleerbaar is. Btw kan worden verlaagd naar 6% en er bestaan groene leningen." },
+        { "q": "Hoe lang duurt de installatie?", "a": "De installatie duurt doorgaans 1 tot 5 dagen afhankelijk van de oppervlakte. Voor grote commerciële of industriële projecten kan de doorlooptijd langer zijn. Wij plannen de werken om hinder te minimaliseren." },
+        { "q": "Werkt u door heel België?", "a": "Ja, ToitureVerte werkt door heel België: Brussel, Wallonië (Luik, Namen, Charleroi, Bergen...) en Vlaanderen (Antwerpen, Gent, Brugge, Leuven...). Wij verplaatsen ons zonder extra kosten binnen een straal van 100 km van Brussel." }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Klaar om uw dak te transformeren?",
+      "subtitle": "Contacteer ons voor een gratis en vrijblijvende haalbaarheidsstudie. Wij werken in Brussel en heel België.",
+      "cta1": "Gratis offerte",
+      "cta2": "Bel ons"
+    }
+  },
+  "contact": {
+    "hero": { "title": "Contacteer ons", "subtitle": "Ontvang een gratis en vrijblijvende offerte voor uw begroeiingsproject. Wij antwoorden binnen 24 werkuren." },
+    "form": {
+      "title": "Gratis offerteaanvraag",
+      "intro": "Alle velden gemarkeerd met een * zijn verplicht.",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "projectType": "Type project",
+      "projectTypePlaceholder": "Kies...",
+      "surface": "Geschatte oppervlakte (m²)",
+      "surfacePlaceholder": "bijv. 150",
+      "location": "Gemeente / Stad",
+      "locationPlaceholder": "bijv. Brussel, Luik, Gent...",
+      "message": "Bericht",
+      "messagePlaceholder": "Beschrijf uw project, uw vragen, uw beperkingen...",
+      "consent": "Ik ga akkoord dat mijn gegevens worden gebruikt door ToitureVerte om mijn offerteaanvraag te verwerken, overeenkomstig ons privacybeleid.",
+      "errors": {
+        "firstName": "Voornaam is vereist.",
+        "lastName": "Achternaam is vereist.",
+        "email": "Ongeldig e-mailadres.",
+        "projectType": "Gelieve een projecttype te kiezen.",
+        "location": "De gemeente is vereist.",
+        "consent": "U moet het privacybeleid accepteren."
+      }
+    }
+  },
+  "animation": {
+    "badge": "Interactieve visualisatie",
+    "title": "De cyclus van evapotranspiratie",
+    "subtitle": "Hoe een groendak op natuurlijke wijze temperatuur en water reguleert",
+    "ariaLabel": "Animatie van de evapotranspiratiecyclus van een groendak",
+    "evapLabel": "Waterdamp",
+    "evapTranspLabel": "Evapotranspiratie",
+    "retentionLabel": "Waterretentie",
+    "thermalBreakLabel": "Thermische onderbreking",
+    "benefitsTitle": "Gemeten effecten",
+    "metric1": { "label": "Oppervlaktetemperatuur", "sub": "vs. kaal dak in de zomer" },
+    "metric2": { "label": "Regenwaterretentie", "sub": "extensief groendak 10cm" },
+    "metric3": { "label": "CO₂ geabsorbeerd / m² / jaar", "sub": "door fotosynthese" },
+    "metric4": { "label": "Levensduur afdichting", "sub": "beschermd tegen UV en schokken" },
+    "tempCompare": { "bareRoof": "Kaal dak", "greenRoof": "Groendak" },
+    "layers": {
+      "substrate": "Teeltsubstraat",
+      "substrateDesc": "5–30 cm afhankelijk van het type",
+      "drainage": "Drainage + Geotextiel",
+      "insulation": "Thermische isolatie",
+      "insulationDesc": "λ ≤ 0,022 W/m·K",
+      "structure": "Draagstructuur",
+      "interior": "Binnenlands comfort"
+    },
+    "legend": {
+      "evap": "Evapotranspiratie",
+      "rain": "Vastgehouden regenwater",
+      "thermal": "Thermische isolatie",
+      "bio": "Vegetatiebedekking"
+    }
+  },
+  "footer": {
+    "tagline": "Specialist in dakbegroeining in Brussel en heel België. Wij transformeren uw daken in duurzame groene ruimtes.",
+    "navigation": "Navigatie",
+    "services": "Onze Diensten",
+    "servicesList": ["Extensief groendak", "Semi-intensief groendak", "Intensief groendak / Daktuin", "Studie & ontwerp", "Onderhoud & beheer"],
+    "contact": "Contact",
+    "address": "Brussel, België",
+    "zone": "Werkgebied: heel België",
+    "rights": "Alle rechten voorbehouden.",
+    "legalNotice": "Wettelijke vermeldingen",
+    "privacy": "Privacybeleid"
+  },
+  "error": {
+    "404title": "Pagina niet gevonden",
+    "404msg": "De pagina die u zoekt bestaat niet of is verplaatst.",
+    "genericTitle": "Er is een fout opgetreden",
+    "genericMsg": "Wij werken aan het oplossen van dit probleem. Probeer het opnieuw.",
+    "backHome": "Terug naar home",
+    "contactUs": "Contacteer ons"
+  }
+}

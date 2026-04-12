@@ -4,7 +4,7 @@
     <section class="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav aria-label="Fil d'Ariane" class="flex items-center gap-2 text-sm text-brand-300 mb-6">
-          <NuxtLink to="/" class="hover:text-white transition-colors">Accueil</NuxtLink>
+          <NuxtLink :to="localePath('/')" class="hover:text-white transition-colors">Accueil</NuxtLink>
           <span>/</span>
           <span class="text-white font-medium">Subsides & Primes</span>
         </nav>
@@ -233,7 +233,7 @@
       <div class="max-w-2xl mx-auto px-4">
         <h2 class="text-3xl font-bold mb-4">On s'occupe des démarches pour vous</h2>
         <p class="text-brand-100 mb-8">ToitureVerte vous accompagne dans l'identification et la demande de toutes les primes auxquelles vous avez droit. Devis et analyse des subsides gratuits.</p>
-        <NuxtLink to="/contact" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
+        <NuxtLink :to="localePath('/contact')" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
           Analyse gratuite des subsides disponibles
         </NuxtLink>
       </div>
@@ -242,6 +242,8 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
+
 useSeoMeta({
   title: 'Subsides & Primes Toiture Verte en Belgique 2025',
   description: 'Toutes les aides financières pour végétaliser votre toiture en Belgique : primes Bruxelles (30 €/m²), Wallonie, Flandre, TVA 6%, prêts verts. Guide complet 2025.',

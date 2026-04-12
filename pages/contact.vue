@@ -4,7 +4,7 @@
     <section class="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav aria-label="Fil d'Ariane" class="flex items-center gap-2 text-sm text-brand-300 mb-6">
-          <NuxtLink to="/" class="hover:text-white transition-colors">Accueil</NuxtLink>
+          <NuxtLink :to="localePath('/')" class="hover:text-white transition-colors">Accueil</NuxtLink>
           <span>/</span>
           <span class="text-white font-medium">Contact</span>
         </nav>
@@ -227,7 +227,7 @@
                   >
                   <label for="consent" class="text-xs text-gray-600">
                     J'accepte que mes données soient utilisées par ToitureVerte pour traiter ma demande de devis, conformément à notre
-                    <NuxtLink to="/politique-confidentialite" class="text-brand-600 hover:underline">politique de confidentialité</NuxtLink>. *
+                    <NuxtLink :to="localePath('/politique-confidentialite')" class="text-brand-600 hover:underline">politique de confidentialité</NuxtLink>. *
                   </label>
                 </div>
                 <p v-if="errors.consent" class="text-xs text-red-500 -mt-2">{{ errors.consent }}</p>
@@ -263,6 +263,8 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
+
 useSeoMeta({
   title: 'Contact & Devis Gratuit – ToitureVerte Bruxelles',
   description: 'Contactez ToitureVerte pour un devis gratuit de végétalisation de toiture à Bruxelles et en Belgique. Réponse sous 24h. +32 2 555 12 34.',

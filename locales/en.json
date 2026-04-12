@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "techniques": "Techniques & Effects",
+    "subsidies": "Subsidies",
+    "portfolio": "Projects",
+    "contact": "Contact"
+  },
+  "common": {
+    "freeQuote": "Free Quote",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "startProject": "Start My Project",
+    "freeStudy": "Free Feasibility Study",
+    "freePEBStudy": "Free EPC Assessment",
+    "subsidiesAnalysis": "Free Subsidy Analysis",
+    "allBelgium": "Brussels · All of Belgium",
+    "send": "Send My Quote Request",
+    "sending": "Sending...",
+    "successMsg": "Thank you! Your request has been sent. We will contact you within 24 hours.",
+    "required": "required",
+    "response24h": "Response within 24 business hours."
+  },
+  "home": {
+    "hero": {
+      "title": "Transform Your Roof Into",
+      "titleAccent": "a Living Green Space",
+      "description": "ToitureVerte is your specialist for green roof installation in Brussels and across Belgium. Extensive, semi-intensive green roofs and roof gardens — we design and install durable, beautiful living roofs.",
+      "cta1": "Request a Free Quote",
+      "cta2": "Discover Our Services"
+    },
+    "stats": [
+      { "value": "10+", "label": "Years of Experience" },
+      { "value": "350+", "label": "Projects Completed" },
+      { "value": "85,000", "label": "m² Greened" },
+      { "value": "100%", "label": "Satisfied Clients" }
+    ],
+    "benefits": {
+      "badge": "Why a Green Roof?",
+      "title": "The Benefits of a Vegetated Roof",
+      "subtitle": "A green roof is more than aesthetics — it's a sustainable investment with multiple benefits for your building and the environment.",
+      "items": [
+        { "icon": "🌡️", "title": "Thermal Insulation", "description": "Reduce your energy consumption. A green roof improves building insulation both in summer and winter." },
+        { "icon": "💧", "title": "Water Management", "description": "Retain up to 90% of rainwater, reducing flood risk and relieving drainage systems." },
+        { "icon": "🦋", "title": "Urban Biodiversity", "description": "Create a refuge for insects and birds in the urban environment. Actively contribute to nature in the city." },
+        { "icon": "💰", "title": "Property Value", "description": "A vegetated roof increases the value of your property by 5 to 15% and improves its market appeal." }
+      ]
+    },
+    "servicesSection": {
+      "badge": "What We Offer",
+      "title": "Our Green Roof Services",
+      "subtitle": "From simple extensive roofs to rooftop gardens, ToitureVerte manages every project from A to Z across Belgium."
+    },
+    "processSection": {
+      "badge": "Our Method",
+      "title": "A Turnkey Project, Step by Step",
+      "steps": [
+        { "title": "Feasibility Study", "description": "Analysis of your roof: structure, slope, accessibility, budget." },
+        { "title": "Custom Design", "description": "Detailed plans, choice of plants and materials tailored to your project." },
+        { "title": "Professional Installation", "description": "Installation by our certified teams in Brussels and across Belgium." },
+        { "title": "Follow-up & Maintenance", "description": "Maintenance contracts and long-term vegetation monitoring." }
+      ]
+    },
+    "why": {
+      "badge": "Our Commitment",
+      "title": "Why Choose ToitureVerte?",
+      "description": "Based in Brussels, we operate across Belgium with over 10 years of recognised expertise in green roof installation. Every project is unique, every solution is tailored.",
+      "cta": "Let's Discuss Your Project",
+      "items": [
+        { "icon": "🏅", "title": "Certified Expertise", "description": "Teams trained to Belgian and European standards. Members of the green roof federation." },
+        { "icon": "📐", "title": "Tailored Solutions", "description": "Every roof is unique. We adapt our solution to the structure, budget and your vision." },
+        { "icon": "🔧", "title": "Complete Service", "description": "From design to maintenance, ToitureVerte provides full project support." },
+        { "icon": "🌍", "title": "Ecological Commitment", "description": "Local and sustainable materials, plants adapted to the Belgian climate, positive carbon footprint." }
+      ]
+    },
+    "faq": {
+      "badge": "Frequently Asked Questions",
+      "title": "Everything You Need to Know About Green Roofs",
+      "items": [
+        { "q": "What is an extensive green roof?", "a": "An extensive green roof is the lightest type of roof greening (50 to 150 kg/m²). It consists of a substrate layer of 5 to 15 cm and hardy plants such as sedums. It requires minimal maintenance and is suitable for most flat roofs in Belgium." },
+        { "q": "What does a green roof cost in Belgium?", "a": "The cost varies by type: between €40 and €80/m² for extensive, €80 to €150/m² for semi-intensive, and €150 to €300/m² for intensive. These prices include supply and installation. We offer a free personalised quote." },
+        { "q": "Can my roof support a green roof?", "a": "The vast majority of flat roofs can accommodate a green roof. Our experts conduct a free feasibility study to assess the load-bearing capacity of your structure, the slope and the condition of existing waterproofing." },
+        { "q": "Are there grants for green roofs in Belgium?", "a": "Yes! The Brussels Capital Region offers grants up to €50,000 (€30/m² for individuals). Wallonia and Flanders also offer cumulative regional and municipal subsidies. VAT can be reduced to 6% and green loans are available." },
+        { "q": "How long does installation take?", "a": "Installation typically takes 1 to 5 days depending on the area. For large commercial or industrial projects, the timeframe may be longer. We plan works to minimise disruption." },
+        { "q": "Do you work across all of Belgium?", "a": "Yes, ToitureVerte operates across Belgium: Brussels, Wallonia (Liège, Namur, Charleroi, Mons...) and Flanders (Antwerp, Ghent, Bruges, Leuven...). We travel at no extra charge within 100 km of Brussels." }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Ready to Transform Your Roof?",
+      "subtitle": "Contact us for a free, no-obligation feasibility study. We operate in Brussels and across Belgium.",
+      "cta1": "Free Quote",
+      "cta2": "Call Us"
+    }
+  },
+  "contact": {
+    "hero": { "title": "Contact Us", "subtitle": "Get a free, no-obligation quote for your green roof project. We respond within 24 business hours." },
+    "form": {
+      "title": "Free Quote Request",
+      "intro": "All fields marked with * are required.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Choose...",
+      "surface": "Estimated Area (m²)",
+      "surfacePlaceholder": "e.g. 150",
+      "location": "Municipality / City",
+      "locationPlaceholder": "e.g. Brussels, Liège, Ghent...",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project, your questions, your constraints...",
+      "consent": "I agree that my data will be used by ToitureVerte to process my quote request, in accordance with our privacy policy.",
+      "errors": {
+        "firstName": "First name is required.",
+        "lastName": "Last name is required.",
+        "email": "Invalid email address.",
+        "projectType": "Please choose a project type.",
+        "location": "Municipality is required.",
+        "consent": "You must accept the privacy policy."
+      }
+    }
+  },
+  "animation": {
+    "badge": "Interactive Visualisation",
+    "title": "The Evapotranspiration Cycle",
+    "subtitle": "How a green roof naturally regulates temperature and water",
+    "ariaLabel": "Animation of the evapotranspiration cycle of a green roof",
+    "evapLabel": "Water vapour",
+    "evapTranspLabel": "Evapotranspiration",
+    "retentionLabel": "Water retention",
+    "thermalBreakLabel": "Thermal break",
+    "benefitsTitle": "Measured Effects",
+    "metric1": { "label": "Surface temperature", "sub": "vs. bare roof in summer" },
+    "metric2": { "label": "Rainwater retention", "sub": "10cm extensive green roof" },
+    "metric3": { "label": "CO₂ absorbed / m² / year", "sub": "through photosynthesis" },
+    "metric4": { "label": "Membrane lifespan", "sub": "protected from UV and thermal shock" },
+    "tempCompare": { "bareRoof": "Bare roof", "greenRoof": "Green roof" },
+    "layers": {
+      "substrate": "Growing substrate",
+      "substrateDesc": "5–30 cm depending on type",
+      "drainage": "Drainage + Geotextile",
+      "insulation": "Thermal insulation",
+      "insulationDesc": "λ ≤ 0.022 W/m·K",
+      "structure": "Load-bearing structure",
+      "interior": "Indoor comfort"
+    },
+    "legend": {
+      "evap": "Evapotranspiration",
+      "rain": "Retained rainwater",
+      "thermal": "Thermal insulation",
+      "bio": "Vegetation cover"
+    }
+  },
+  "footer": {
+    "tagline": "Specialist in green roof installation in Brussels and across Belgium. We transform your roofs into sustainable green spaces.",
+    "navigation": "Navigation",
+    "services": "Our Services",
+    "servicesList": ["Extensive green roof", "Semi-intensive green roof", "Intensive / Roof garden", "Study & design", "Maintenance & upkeep"],
+    "contact": "Contact",
+    "address": "Brussels, Belgium",
+    "zone": "Coverage: all of Belgium",
+    "rights": "All rights reserved.",
+    "legalNotice": "Legal Notice",
+    "privacy": "Privacy Policy"
+  },
+  "error": {
+    "404title": "Page Not Found",
+    "404msg": "The page you are looking for does not exist or has been moved.",
+    "genericTitle": "An Error Occurred",
+    "genericMsg": "We are working to resolve this issue. Please try again.",
+    "backHome": "Back to Home",
+    "contactUs": "Contact Us"
+  }
+}

@@ -14,9 +14,7 @@
             </div>
             <span class="text-xl font-bold text-white">Toiture<span class="text-brand-400">Verte</span></span>
           </div>
-          <p class="text-sm leading-relaxed text-gray-400">
-            Spécialiste en végétalisation de toitures à Bruxelles et dans toute la Belgique. Nous transformons vos toits en espaces verts durables.
-          </p>
+          <p class="text-sm leading-relaxed text-gray-400">{{ t('footer.tagline') }}</p>
           <div class="mt-5 flex gap-3">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
               class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors">
@@ -35,11 +33,11 @@
 
         <!-- Navigation -->
         <div>
-          <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h3>
+          <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{{ t('footer.navigation') }}</h3>
           <ul class="space-y-2.5">
-            <li v-for="link in navLinks" :key="link.to">
-              <NuxtLink :to="link.to" class="text-sm text-gray-400 hover:text-brand-400 transition-colors">
-                {{ link.label }}
+            <li v-for="link in navLinks" :key="link.name">
+              <NuxtLink :to="localePath(link.to)" class="text-sm text-gray-400 hover:text-brand-400 transition-colors">
+                {{ t(link.name) }}
               </NuxtLink>
             </li>
           </ul>
@@ -47,9 +45,9 @@
 
         <!-- Services -->
         <div>
-          <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Nos Services</h3>
+          <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{{ t('footer.services') }}</h3>
           <ul class="space-y-2.5">
-            <li v-for="service in services" :key="service">
+            <li v-for="service in t('footer.servicesList')" :key="service">
               <span class="text-sm text-gray-400">{{ service }}</span>
             </li>
           </ul>
@@ -57,14 +55,14 @@
 
         <!-- Contact -->
         <div>
-          <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h3>
+          <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{{ t('footer.contact') }}</h3>
           <ul class="space-y-3">
             <li class="flex items-start gap-2.5">
               <svg class="w-4 h-4 text-brand-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
-              <span class="text-sm text-gray-400">Bruxelles, Belgique<br>Zone d'intervention : toute la Belgique</span>
+              <span class="text-sm text-gray-400">{{ t('footer.address') }}<br>{{ t('footer.zone') }}</span>
             </li>
             <li class="flex items-center gap-2.5">
               <svg class="w-4 h-4 text-brand-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,11 +84,15 @@
     <div class="border-t border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-sm text-gray-500">
-          &copy; {{ new Date().getFullYear() }} ToitureVerte. Tous droits réservés.
+          &copy; {{ new Date().getFullYear() }} ToitureVerte. {{ t('footer.rights') }}
         </p>
         <div class="flex gap-5">
-          <NuxtLink to="/mentions-legales" class="text-sm text-gray-500 hover:text-gray-300 transition-colors">Mentions légales</NuxtLink>
-          <NuxtLink to="/politique-confidentialite" class="text-sm text-gray-500 hover:text-gray-300 transition-colors">Confidentialité</NuxtLink>
+          <NuxtLink :to="localePath('/mentions-legales')" class="text-sm text-gray-500 hover:text-gray-300 transition-colors">
+            {{ t('footer.legalNotice') }}
+          </NuxtLink>
+          <NuxtLink :to="localePath('/politique-confidentialite')" class="text-sm text-gray-500 hover:text-gray-300 transition-colors">
+            {{ t('footer.privacy') }}
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -98,20 +100,15 @@
 </template>
 
 <script setup lang="ts">
-const navLinks = [
-  { to: '/', label: 'Accueil' },
-  { to: '/services', label: 'Services' },
-  { to: '/techniques', label: 'Techniques & Effets' },
-  { to: '/subsides', label: 'Subsides & Primes' },
-  { to: '/realisations', label: 'Réalisations' },
-  { to: '/contact', label: 'Contact' },
-]
+const { t } = useI18n()
+const localePath = useLocalePath()
 
-const services = [
-  'Toiture verte extensive',
-  'Toiture semi-intensive',
-  'Toiture intensive / Jardin',
-  'Étude & conception',
-  'Entretien & maintenance',
+const navLinks = [
+  { to: '/',             name: 'nav.home'      },
+  { to: '/services',     name: 'nav.services'  },
+  { to: '/techniques',   name: 'nav.techniques'},
+  { to: '/subsides',     name: 'nav.subsidies' },
+  { to: '/realisations', name: 'nav.portfolio' },
+  { to: '/contact',      name: 'nav.contact'   },
 ]
 </script>

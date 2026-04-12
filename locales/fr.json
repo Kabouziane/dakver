@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "techniques": "Techniques & Effets",
+    "subsidies": "Subsides",
+    "portfolio": "Réalisations",
+    "contact": "Contact"
+  },
+  "common": {
+    "freeQuote": "Devis gratuit",
+    "learnMore": "En savoir plus",
+    "contactUs": "Nous contacter",
+    "startProject": "Démarrer mon projet",
+    "freeStudy": "Étude de faisabilité gratuite",
+    "freePEBStudy": "Étude PEB gratuite",
+    "subsidiesAnalysis": "Analyse gratuite des subsides disponibles",
+    "allBelgium": "Bruxelles · Toute la Belgique",
+    "send": "Envoyer ma demande de devis",
+    "sending": "Envoi en cours...",
+    "successMsg": "Merci ! Votre demande a été envoyée. Nous vous contactons sous 24h.",
+    "required": "obligatoires",
+    "response24h": "Réponse sous 24h ouvrées."
+  },
+  "home": {
+    "hero": {
+      "title": "Végétalisez votre toiture,",
+      "titleAccent": "valorisez votre bâtiment",
+      "description": "ToitureVerte est votre spécialiste en végétalisation de toitures à Bruxelles et en Belgique. Toitures extensives, semi-intensives, jardins sur toiture — nous concevons et installons des toits verts durables et esthétiques.",
+      "cta1": "Demander un devis gratuit",
+      "cta2": "Découvrir nos services"
+    },
+    "stats": [
+      { "value": "10+", "label": "Années d'expérience" },
+      { "value": "350+", "label": "Projets réalisés" },
+      { "value": "85 000", "label": "m² végétalisés" },
+      { "value": "100%", "label": "Clients satisfaits" }
+    ],
+    "benefits": {
+      "badge": "Pourquoi une toiture verte ?",
+      "title": "Les avantages d'un toit végétalisé",
+      "subtitle": "Une toiture verte n'est pas qu'esthétique : c'est un investissement durable aux bénéfices multiples pour votre bâtiment et l'environnement.",
+      "items": [
+        { "icon": "🌡️", "title": "Isolation thermique", "description": "Réduisez votre consommation énergétique. Une toiture verte améliore l'isolation de votre bâtiment en été comme en hiver." },
+        { "icon": "💧", "title": "Gestion des eaux", "description": "Retenez jusqu'à 90% des eaux pluviales, réduisant les risques d'inondation et soulageant les réseaux d'égouts." },
+        { "icon": "🦋", "title": "Biodiversité urbaine", "description": "Créez un refuge pour les insectes et oiseaux en milieu urbain. Contribuez activement à la nature en ville." },
+        { "icon": "💰", "title": "Valeur immobilière", "description": "Une toiture végétalisée augmente la valeur de votre bien de 5 à 15% et améliore son attractivité sur le marché." }
+      ]
+    },
+    "servicesSection": {
+      "badge": "Ce que nous proposons",
+      "title": "Nos services de végétalisation",
+      "subtitle": "Du simple toit extensif au jardin suspendu, ToitureVerte accompagne chaque projet de A à Z en Belgique."
+    },
+    "processSection": {
+      "badge": "Notre méthode",
+      "title": "Un projet clé en main, étape par étape",
+      "steps": [
+        { "title": "Étude de faisabilité", "description": "Analyse de votre toiture : structure, pente, accessibilité, budget." },
+        { "title": "Conception sur-mesure", "description": "Plans détaillés, choix des végétaux et des matériaux adaptés." },
+        { "title": "Installation professionnelle", "description": "Pose par nos équipes certifiées à Bruxelles et en Belgique." },
+        { "title": "Suivi & entretien", "description": "Contrats d'entretien et suivi de la végétation sur le long terme." }
+      ]
+    },
+    "why": {
+      "badge": "Notre engagement",
+      "title": "Pourquoi choisir ToitureVerte ?",
+      "description": "Basés à Bruxelles, nous intervenons dans toute la Belgique avec une expertise reconnue en végétalisation de toitures depuis plus de 10 ans. Chaque projet est unique, chaque solution est sur-mesure.",
+      "cta": "Discutons de votre projet",
+      "items": [
+        { "icon": "🏅", "title": "Expertise certifiée", "description": "Équipes formées aux normes belges et européennes. Membres de la fédération des toitures vertes." },
+        { "icon": "📐", "title": "Solutions sur-mesure", "description": "Chaque toiture est unique. Nous adaptons notre solution à la structure, au budget et à vos envies." },
+        { "icon": "🔧", "title": "Service complet", "description": "De la conception à l'entretien, ToitureVerte assure un suivi complet de votre projet." },
+        { "icon": "🌍", "title": "Engagement écologique", "description": "Matériaux locaux et durables, végétaux adaptés au climat belge, bilan carbone positif." }
+      ]
+    },
+    "faq": {
+      "badge": "Questions fréquentes",
+      "title": "Tout savoir sur les toitures vertes",
+      "items": [
+        { "q": "Qu'est-ce qu'une toiture verte extensive ?", "a": "Une toiture verte extensive est le type de végétalisation le plus léger (50 à 150 kg/m²). Elle est composée d'une couche de substrat de 5 à 15 cm et de végétaux résistants comme les sedums. Elle nécessite peu d'entretien et convient à la majorité des toitures plates en Belgique." },
+        { "q": "Quel est le prix d'une toiture végétalisée en Belgique ?", "a": "Le coût varie selon le type : entre 40 et 80 €/m² pour une toiture extensive, entre 80 et 150 €/m² pour une semi-intensive, et entre 150 et 300 €/m² pour une toiture intensive. Ces prix incluent la fourniture et la pose. Nous offrons un devis gratuit et personnalisé." },
+        { "q": "Ma toiture peut-elle supporter une végétalisation ?", "a": "La grande majorité des toitures plates peut accueillir une toiture verte. Nos experts réalisent une étude de faisabilité gratuite pour évaluer la capacité portante de votre structure, la pente et l'état de l'étanchéité existante." },
+        { "q": "Existe-t-il des primes pour les toitures vertes en Belgique ?", "a": "Oui ! La Région de Bruxelles-Capitale propose des primes jusqu'à 50 000 € (30 €/m² pour les particuliers). La Wallonie et la Flandre offrent également des aides régionales et communales cumulables. La TVA peut être réduite à 6% et des prêts verts existent." },
+        { "q": "Combien de temps dure l'installation ?", "a": "L'installation prend généralement 1 à 5 jours selon la superficie. Pour les grands projets commerciaux ou industriels, le délai peut être plus long. Nous planifions les travaux pour minimiser les perturbations." },
+        { "q": "Intervenez-vous partout en Belgique ?", "a": "Oui, ToitureVerte intervient dans toute la Belgique : Bruxelles, Wallonie (Liège, Namur, Charleroi, Mons...) et Flandre (Anvers, Gand, Bruges, Louvain...). Nous nous déplaçons sans frais supplémentaires dans un rayon de 100 km de Bruxelles." }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Prêt à transformer votre toiture ?",
+      "subtitle": "Contactez-nous pour une étude de faisabilité gratuite et sans engagement. Nous intervenons à Bruxelles et dans toute la Belgique.",
+      "cta1": "Devis gratuit",
+      "cta2": "Nous appeler"
+    }
+  },
+  "contact": {
+    "hero": { "title": "Contactez-nous", "subtitle": "Obtenez un devis gratuit et sans engagement pour votre projet de végétalisation. Nous répondons sous 24 heures ouvrées." },
+    "form": {
+      "title": "Demande de devis gratuit",
+      "intro": "Tous les champs marqués d'un * sont obligatoires.",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "projectType": "Type de projet",
+      "projectTypePlaceholder": "Choisir...",
+      "surface": "Surface estimée (m²)",
+      "surfacePlaceholder": "ex. 150",
+      "location": "Commune / Ville",
+      "locationPlaceholder": "ex. Bruxelles, Liège, Gand...",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet, vos questions, vos contraintes...",
+      "consent": "J'accepte que mes données soient utilisées par ToitureVerte pour traiter ma demande de devis, conformément à notre politique de confidentialité.",
+      "errors": {
+        "firstName": "Le prénom est requis.",
+        "lastName": "Le nom est requis.",
+        "email": "Email invalide.",
+        "projectType": "Veuillez choisir un type de projet.",
+        "location": "La commune est requise.",
+        "consent": "Vous devez accepter la politique de confidentialité."
+      }
+    }
+  },
+  "animation": {
+    "badge": "Visualisation interactive",
+    "title": "Le cycle de l'évapotranspiration",
+    "subtitle": "Comment une toiture verte régule naturellement la température et l'eau",
+    "ariaLabel": "Animation du cycle d'évapotranspiration d'une toiture verte",
+    "evapLabel": "Vapeur d'eau",
+    "evapTranspLabel": "Évapotranspiration",
+    "retentionLabel": "Rétention d'eau",
+    "thermalBreakLabel": "Rupture thermique",
+    "benefitsTitle": "Effets mesurés",
+    "metric1": { "label": "Température de surface", "sub": "vs. toiture nue en été" },
+    "metric2": { "label": "Rétention eaux pluviales", "sub": "toiture extensive 10cm" },
+    "metric3": { "label": "CO₂ absorbé / m² / an", "sub": "par photosynthèse" },
+    "metric4": { "label": "Durée de vie membrane", "sub": "protégée des UV et chocs" },
+    "tempCompare": { "bareRoof": "Toiture nue", "greenRoof": "Toiture verte" },
+    "layers": {
+      "substrate": "Substrat de culture",
+      "substrateDesc": "5–30 cm selon le type",
+      "drainage": "Drainage + Géotextile",
+      "insulation": "Isolation thermique",
+      "insulationDesc": "λ ≤ 0,022 W/m·K",
+      "structure": "Structure porteuse",
+      "interior": "Confort intérieur"
+    },
+    "legend": {
+      "evap": "Évapotranspiration",
+      "rain": "Eau de pluie retenue",
+      "thermal": "Isolation thermique",
+      "bio": "Couverture végétale"
+    }
+  },
+  "footer": {
+    "tagline": "Spécialiste en végétalisation de toitures à Bruxelles et dans toute la Belgique. Nous transformons vos toits en espaces verts durables.",
+    "navigation": "Navigation",
+    "services": "Nos Services",
+    "servicesList": ["Toiture verte extensive", "Toiture semi-intensive", "Toiture intensive / Jardin", "Étude & conception", "Entretien & maintenance"],
+    "contact": "Contact",
+    "address": "Bruxelles, Belgique",
+    "zone": "Zone d'intervention : toute la Belgique",
+    "rights": "Tous droits réservés.",
+    "legalNotice": "Mentions légales",
+    "privacy": "Confidentialité"
+  },
+  "error": {
+    "404title": "Page introuvable",
+    "404msg": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "genericTitle": "Une erreur est survenue",
+    "genericMsg": "Nous travaillons à résoudre ce problème. Veuillez réessayer.",
+    "backHome": "Retour à l'accueil",
+    "contactUs": "Nous contacter"
+  }
+}

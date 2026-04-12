@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl">
           <nav aria-label="Fil d'Ariane" class="flex items-center gap-2 text-sm text-brand-300 mb-6">
-            <NuxtLink to="/" class="hover:text-white transition-colors">Accueil</NuxtLink>
+            <NuxtLink :to="localePath('/')" class="hover:text-white transition-colors">Accueil</NuxtLink>
             <span>/</span>
             <span class="text-white font-medium">Services</span>
           </nav>
@@ -38,7 +38,7 @@
                 <p class="text-sm font-bold text-gray-900 mt-1">{{ spec.value }}</p>
               </div>
             </div>
-            <NuxtLink to="/contact" class="btn-primary">Demander un devis</NuxtLink>
+            <NuxtLink :to="localePath('/contact')" class="btn-primary">Demander un devis</NuxtLink>
           </div>
           <div class="bg-gradient-to-br from-brand-50 to-brand-100 rounded-3xl h-80 flex items-center justify-center">
             <div class="text-center p-8">
@@ -75,7 +75,7 @@
                 <p class="text-sm font-bold text-gray-900 mt-1">{{ spec.value }}</p>
               </div>
             </div>
-            <NuxtLink to="/contact" class="btn-primary">Demander un devis</NuxtLink>
+            <NuxtLink :to="localePath('/contact')" class="btn-primary">Demander un devis</NuxtLink>
           </div>
         </div>
 
@@ -98,7 +98,7 @@
                 <p class="text-sm font-bold text-gray-900 mt-1">{{ spec.value }}</p>
               </div>
             </div>
-            <NuxtLink to="/contact" class="btn-primary">Demander un devis</NuxtLink>
+            <NuxtLink :to="localePath('/contact')" class="btn-primary">Demander un devis</NuxtLink>
           </div>
           <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl h-80 flex items-center justify-center">
             <div class="text-center p-8">
@@ -134,7 +134,7 @@
                 <span class="text-gray-700">{{ task }}</span>
               </li>
             </ul>
-            <NuxtLink to="/contact" class="btn-primary">Souscrire un contrat d'entretien</NuxtLink>
+            <NuxtLink :to="localePath('/contact')" class="btn-primary">Souscrire un contrat d'entretien</NuxtLink>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
       <div class="max-w-2xl mx-auto px-4">
         <h2 class="text-3xl font-bold mb-4">Vous avez un projet en tête ?</h2>
         <p class="text-brand-100 mb-8">Nos experts vous conseillent gratuitement sur le type de végétalisation adapté à votre toiture.</p>
-        <NuxtLink to="/contact" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
+        <NuxtLink :to="localePath('/contact')" class="btn-primary bg-white text-brand-800 hover:bg-brand-50 text-base px-8 py-4">
           Étude de faisabilité gratuite
         </NuxtLink>
       </div>
@@ -154,6 +154,8 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
+
 useSeoMeta({
   title: 'Nos Services de Végétalisation de Toiture',
   description: 'Découvrez nos services : toiture verte extensive, semi-intensive, intensive et entretien. ToitureVerte intervient à Bruxelles et dans toute la Belgique.',

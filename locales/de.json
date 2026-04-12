@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "techniques": "Techniken & Wirkungen",
+    "subsidies": "Förderungen",
+    "portfolio": "Referenzen",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "freeQuote": "Kostenloses Angebot",
+    "learnMore": "Mehr erfahren",
+    "contactUs": "Kontakt aufnehmen",
+    "startProject": "Mein Projekt starten",
+    "freeStudy": "Kostenlose Machbarkeitsstudie",
+    "freePEBStudy": "Kostenlose Energieausweis-Analyse",
+    "subsidiesAnalysis": "Kostenlose Förderanalyse",
+    "allBelgium": "Brüssel · Ganz Belgien",
+    "send": "Anfrage absenden",
+    "sending": "Wird gesendet...",
+    "successMsg": "Vielen Dank! Ihre Anfrage wurde gesendet. Wir melden uns innerhalb von 24 Stunden.",
+    "required": "Pflichtfelder",
+    "response24h": "Antwort innerhalb von 24 Wertstunden."
+  },
+  "home": {
+    "hero": {
+      "title": "Begrünen Sie Ihr Dach,",
+      "titleAccent": "steigern Sie Ihren Immobilienwert",
+      "description": "ToitureVerte ist Ihr Spezialist für Dachbegrünung in Brüssel und ganz Belgien. Extensive, semi-intensive Gründächer und Dachgärten — wir planen und installieren nachhaltige und ästhetische Gründächer.",
+      "cta1": "Kostenloses Angebot anfragen",
+      "cta2": "Unsere Leistungen entdecken"
+    },
+    "stats": [
+      { "value": "10+", "label": "Jahre Erfahrung" },
+      { "value": "350+", "label": "Realisierte Projekte" },
+      { "value": "85.000", "label": "m² begrünt" },
+      { "value": "100%", "label": "Zufriedene Kunden" }
+    ],
+    "benefits": {
+      "badge": "Warum ein Gründach?",
+      "title": "Die Vorteile eines begrünten Dachs",
+      "subtitle": "Ein Gründach ist mehr als Ästhetik — es ist eine nachhaltige Investition mit vielfältigem Nutzen für Ihr Gebäude und die Umwelt.",
+      "items": [
+        { "icon": "🌡️", "title": "Wärmedämmung", "description": "Reduzieren Sie Ihren Energieverbrauch. Ein Gründach verbessert die Dämmung Ihres Gebäudes im Sommer wie im Winter." },
+        { "icon": "💧", "title": "Regenwassermanagement", "description": "Halten Sie bis zu 90% des Regenwassers zurück, reduzieren Sie Überschwemmungsrisiken und entlasten Sie die Kanalisation." },
+        { "icon": "🦋", "title": "Urbane Biodiversität", "description": "Schaffen Sie einen Rückzugsort für Insekten und Vögel in der Stadt. Tragen Sie aktiv zur Natur im urbanen Raum bei." },
+        { "icon": "💰", "title": "Immobilienwert", "description": "Ein begrüntes Dach steigert den Wert Ihrer Immobilie um 5 bis 15% und verbessert ihre Marktattraktivität." }
+      ]
+    },
+    "servicesSection": {
+      "badge": "Unser Angebot",
+      "title": "Unsere Dachbegrünungsleistungen",
+      "subtitle": "Vom einfachen extensiven Dach bis zum Dachgarten begleitet ToitureVerte jedes Projekt von A bis Z in Belgien."
+    },
+    "processSection": {
+      "badge": "Unsere Methode",
+      "title": "Ein schlüsselfertiges Projekt, Schritt für Schritt",
+      "steps": [
+        { "title": "Machbarkeitsstudie", "description": "Analyse Ihres Dachs: Struktur, Neigung, Zugänglichkeit, Budget." },
+        { "title": "Maßgeschneidertes Design", "description": "Detaillierte Pläne, Wahl der Pflanzen und angepasster Materialien." },
+        { "title": "Professionelle Installation", "description": "Ausführung durch unsere zertifizierten Teams in Brüssel und ganz Belgien." },
+        { "title": "Begleitung & Pflege", "description": "Pflegeverträge und langfristige Begleitung der Begrünung." }
+      ]
+    },
+    "why": {
+      "badge": "Unser Engagement",
+      "title": "Warum ToitureVerte wählen?",
+      "description": "Mit Sitz in Brüssel sind wir in ganz Belgien tätig und verfügen über mehr als 10 Jahre anerkannte Expertise in der Dachbegrünung. Jedes Projekt ist einzigartig, jede Lösung ist maßgeschneidert.",
+      "cta": "Lassen Sie uns Ihr Projekt besprechen",
+      "items": [
+        { "icon": "🏅", "title": "Zertifizierte Expertise", "description": "Teams nach belgischen und europäischen Normen ausgebildet. Mitglieder des Gründachverbandes." },
+        { "icon": "📐", "title": "Maßgeschneiderte Lösungen", "description": "Jedes Dach ist einzigartig. Wir passen unsere Lösung an Struktur, Budget und Ihre Wünsche an." },
+        { "icon": "🔧", "title": "Vollständiger Service", "description": "Von der Planung bis zur Pflege gewährleistet ToitureVerte eine vollständige Projektbegleitung." },
+        { "icon": "🌍", "title": "Ökologisches Engagement", "description": "Lokale und nachhaltige Materialien, ans belgische Klima angepasste Pflanzen, positive Klimabilanz." }
+      ]
+    },
+    "faq": {
+      "badge": "Häufig gestellte Fragen",
+      "title": "Alles über Gründächer",
+      "items": [
+        { "q": "Was ist ein extensives Gründach?", "a": "Ein extensives Gründach ist die leichteste Art der Dachbegrünung (50 bis 150 kg/m²). Es besteht aus einer 5 bis 15 cm dicken Substratschicht und robusten Pflanzen wie Sedums. Es erfordert wenig Pflege und eignet sich für die meisten Flachdächer in Belgien." },
+        { "q": "Was kostet ein Gründach in Belgien?", "a": "Die Kosten variieren je nach Typ: 40 bis 80 €/m² für extensiv, 80 bis 150 €/m² für semi-intensiv und 150 bis 300 €/m² für intensiv. Inklusive Lieferung und Einbau. Wir bieten ein kostenloses, persönliches Angebot an." },
+        { "q": "Kann mein Dach eine Begrünung tragen?", "a": "Die überwiegende Mehrheit der Flachdächer kann ein Gründach aufnehmen. Unsere Experten führen eine kostenlose Machbarkeitsstudie durch, um die Tragfähigkeit Ihrer Struktur, die Neigung und den Zustand der vorhandenen Abdichtung zu beurteilen." },
+        { "q": "Gibt es Förderungen für Gründächer in Belgien?", "a": "Ja! Die Region Brüssel-Hauptstadt bietet Prämien bis zu 50.000 € an (30 €/m² für Privatpersonen). Wallonien und Flandern bieten ebenfalls kumulierbare regionale und kommunale Beihilfen. Die Mehrwertsteuer kann auf 6% gesenkt werden und Grünkredite sind verfügbar." },
+        { "q": "Wie lange dauert die Installation?", "a": "Die Installation dauert in der Regel 1 bis 5 Tage, abhängig von der Fläche. Bei großen Gewerbe- oder Industrieprojekten kann es länger dauern. Wir planen die Arbeiten, um Störungen zu minimieren." },
+        { "q": "Sind Sie in ganz Belgien tätig?", "a": "Ja, ToitureVerte ist in ganz Belgien tätig: Brüssel, Wallonien (Lüttich, Namur, Charleroi, Mons...) und Flandern (Antwerpen, Gent, Brügge, Löwen...). Wir fahren ohne Aufpreis in einem Umkreis von 100 km von Brüssel." }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Bereit, Ihr Dach zu verwandeln?",
+      "subtitle": "Kontaktieren Sie uns für eine kostenlose und unverbindliche Machbarkeitsstudie. Wir sind in Brüssel und ganz Belgien tätig.",
+      "cta1": "Kostenloses Angebot",
+      "cta2": "Anrufen"
+    }
+  },
+  "contact": {
+    "hero": { "title": "Kontaktieren Sie uns", "subtitle": "Erhalten Sie ein kostenloses und unverbindliches Angebot für Ihr Begrünungsprojekt. Wir antworten innerhalb von 24 Arbeitsstunden." },
+    "form": {
+      "title": "Kostenloses Angebot anfordern",
+      "intro": "Alle mit * markierten Felder sind Pflichtfelder.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "projectType": "Projekttyp",
+      "projectTypePlaceholder": "Auswählen...",
+      "surface": "Geschätzte Fläche (m²)",
+      "surfacePlaceholder": "z. B. 150",
+      "location": "Gemeinde / Stadt",
+      "locationPlaceholder": "z. B. Brüssel, Lüttich, Gent...",
+      "message": "Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Projekt, Ihre Fragen, Ihre Anforderungen...",
+      "consent": "Ich stimme zu, dass meine Daten von ToitureVerte zur Bearbeitung meiner Angebotsanfrage gemäß unserer Datenschutzerklärung verwendet werden.",
+      "errors": {
+        "firstName": "Vorname ist erforderlich.",
+        "lastName": "Nachname ist erforderlich.",
+        "email": "Ungültige E-Mail-Adresse.",
+        "projectType": "Bitte wählen Sie einen Projekttyp.",
+        "location": "Die Gemeinde ist erforderlich.",
+        "consent": "Sie müssen die Datenschutzerklärung akzeptieren."
+      }
+    }
+  },
+  "animation": {
+    "badge": "Interaktive Visualisierung",
+    "title": "Der Evapotranspirations-Kreislauf",
+    "subtitle": "Wie ein Gründach auf natürliche Weise Temperatur und Wasser reguliert",
+    "ariaLabel": "Animation des Evapotranspirationskreislaufs eines Gründachs",
+    "evapLabel": "Wasserdampf",
+    "evapTranspLabel": "Evapotranspiration",
+    "retentionLabel": "Wasserrückhalt",
+    "thermalBreakLabel": "Wärmebrückenunterbrechung",
+    "benefitsTitle": "Gemessene Wirkungen",
+    "metric1": { "label": "Oberflächentemperatur", "sub": "vs. kahles Dach im Sommer" },
+    "metric2": { "label": "Regenwasserrückhalt", "sub": "extensives Gründach 10 cm" },
+    "metric3": { "label": "CO₂ absorbiert / m² / Jahr", "sub": "durch Photosynthese" },
+    "metric4": { "label": "Lebensdauer Abdichtung", "sub": "geschützt vor UV und Wärmeschocks" },
+    "tempCompare": { "bareRoof": "Kahles Dach", "greenRoof": "Gründach" },
+    "layers": {
+      "substrate": "Wachstumssubstrat",
+      "substrateDesc": "5–30 cm je nach Typ",
+      "drainage": "Drainage + Geotextil",
+      "insulation": "Wärmedämmung",
+      "insulationDesc": "λ ≤ 0,022 W/m·K",
+      "structure": "Tragende Struktur",
+      "interior": "Innenraumkomfort"
+    },
+    "legend": {
+      "evap": "Evapotranspiration",
+      "rain": "Zurückgehaltenes Regenwasser",
+      "thermal": "Wärmedämmung",
+      "bio": "Vegetationsdecke"
+    }
+  },
+  "footer": {
+    "tagline": "Spezialist für Dachbegrünung in Brüssel und ganz Belgien. Wir verwandeln Ihre Dächer in nachhaltige Grünflächen.",
+    "navigation": "Navigation",
+    "services": "Unsere Leistungen",
+    "servicesList": ["Extensives Gründach", "Semi-intensives Gründach", "Intensives Gründach / Dachgarten", "Planung & Gestaltung", "Wartung & Pflege"],
+    "contact": "Kontakt",
+    "address": "Brüssel, Belgien",
+    "zone": "Einzugsgebiet: ganz Belgien",
+    "rights": "Alle Rechte vorbehalten.",
+    "legalNotice": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "error": {
+    "404title": "Seite nicht gefunden",
+    "404msg": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "genericTitle": "Ein Fehler ist aufgetreten",
+    "genericMsg": "Wir arbeiten an der Lösung dieses Problems. Bitte versuchen Sie es erneut.",
+    "backHome": "Zurück zur Startseite",
+    "contactUs": "Kontakt aufnehmen"
+  }
+}
