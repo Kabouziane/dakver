@@ -264,12 +264,21 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Contact & Devis Gratuit – ToitureVerte Bruxelles',
-  description: 'Contactez ToitureVerte pour un devis gratuit de végétalisation de toiture à Bruxelles et en Belgique. Réponse sous 24h. +32 2 555 12 34.',
-  ogTitle: 'Devis gratuit – ToitureVerte Bruxelles',
-  ogDescription: 'Demandez votre devis gratuit pour une toiture verte à Bruxelles ou en Belgique. Réponse sous 24h.',
+  title: 'Devis Toiture Verte Bruxelles – Réponse Gratuite Sous 24h',
+  description: 'Demandez votre devis toiture verte gratuit à Bruxelles. Réponse sous 24h. Étude de faisabilité offerte : impact PEB, primes RENOLUTION E5, coût net estimé.',
+  ogTitle: 'Devis gratuit toiture verte Bruxelles – ToitureVerte',
+  ogDescription: 'Devis gratuit sous 24h. Étude PEB + calcul des primes RENOLUTION E5 inclus.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/contact' }] })
+useHead({
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/contact' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Accueil', url: 'https://www.toitureverte.be/' },
+    { name: 'Contact & Devis', url: 'https://www.toitureverte.be/contact' },
+  ])) }],
+})
+useSeoAlternates('/contact')
 
 const form = reactive({
   firstName: '',

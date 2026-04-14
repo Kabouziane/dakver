@@ -55,10 +55,22 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Onze Realisaties – Groendaken in België | ToitureVerte',
-  description: 'Ontdek de realisaties van ToitureVerte: meer dan 350 dakbegroeiingsprojecten in Brussel, Luik, Gent en heel België.',
+  title: 'Groendak Realisaties – 350+ Projecten Brussel & België',
+  description: '350+ groendakprojecten in Brussel (Elsene, Ukkel, Schaarbeek…), Luik, Gent en heel België. Extensief, semi-intensief, daktuin.',
+  ogTitle: '350+ Groendak realisaties – Brussel & België',
+  ogDescription: 'Galerij groendakprojecten: extensief, semi-intensief, daktuin – Brussel en België.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'nl' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/realisations' }] })
+useHead({
+  htmlAttrs: { lang: 'nl' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/realisations' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Home', url: 'https://www.toitureverte.be/nl' },
+    { name: 'Realisaties', url: 'https://www.toitureverte.be/nl/realisations' },
+  ])) }],
+})
+useSeoAlternates('/realisations')
 
 const stats = [
   { value: '350+', label: 'Gerealiseerde projecten' },

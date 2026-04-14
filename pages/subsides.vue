@@ -291,39 +291,24 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Subsides & Primes Toiture Verte en Belgique 2025',
-  description: 'Toutes les aides financières pour végétaliser votre toiture en Belgique : primes Bruxelles (30 €/m²), Wallonie, Flandre, TVA 6%, prêts verts. Guide complet 2025.',
-  ogTitle: 'Subsides toiture verte Belgique 2025 – ToitureVerte',
-  ogDescription: 'Guide complet des primes et subsides pour toiture verte en Belgique. Bruxelles, Wallonie, Flandre. Jusqu\'à 50% du coût remboursé.',
+  title: 'Primes Toiture Verte Bruxelles 2025 – RENOLUTION E5 jusqu\'à 50 €/m²',
+  description: 'Guide complet des subsides toiture verte 2025 : RENOLUTION E5 Bruxelles (10–50 €/m²), Wallonie, Flandre, TVA 6%. Cumulez les aides pour financer votre projet.',
+  ogTitle: 'Primes toiture verte Bruxelles 2025 – RENOLUTION E5',
+  ogDescription: 'RENOLUTION E5 : jusqu\'à 50 €/m² à Bruxelles selon vos revenus. Guide des aides Wallonie, Flandre + TVA 6%.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
 useHead({
   link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/subsides' }],
-  script: [{
-    type: 'application/ld+json',
-    innerHTML: JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'Quelles primes existe-t-il pour une toiture verte à Bruxelles ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'À Bruxelles, la prime "Nature dans la ville" offre jusqu\'à 30 €/m² pour les particuliers (max. 5 000 €) et jusqu\'à 50 €/m² pour les professionnels (max. 50 000 €). Elle est octroyée par Bruxelles Environnement sous conditions de surface minimale (10 m²) et de conformité technique.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Peut-on cumuler plusieurs aides pour une toiture verte en Belgique ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Oui, dans la plupart des cas, les aides régionales, communales et la TVA réduite sont cumulables. À Bruxelles par exemple, on peut combiner la prime Nature dans la ville avec la TVA à 6% et un prêt vert, réduisant le coût net à environ 40-50% du montant initial.',
-          },
-        },
-      ],
-    }),
-  }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(subsideFaqSchemaFR) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+      { name: 'Accueil', url: 'https://www.toitureverte.be/' },
+      { name: 'Subsides & Primes', url: 'https://www.toitureverte.be/subsides' },
+    ])) },
+  ],
 })
+useSeoAlternates('/subsides')
 
 const activeRegion = ref('bruxelles')
 

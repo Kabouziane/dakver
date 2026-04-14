@@ -146,12 +146,21 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Nos Réalisations – Toitures Vertes en Belgique',
-  description: 'Découvrez les réalisations de ToitureVerte : plus de 350 projets de végétalisation de toitures à Bruxelles, Liège, Gand et dans toute la Belgique.',
-  ogTitle: 'Réalisations ToitureVerte – 350+ projets en Belgique',
-  ogDescription: 'Galerie de nos projets de toitures vertes extensives, semi-intensives et intensives en Belgique.',
+  title: 'Réalisations Toiture Verte – 350+ Projets Bruxelles & Belgique',
+  description: '350+ projets de végétalisation réalisés à Bruxelles (Ixelles, Uccle, Schaerbeek…), Liège, Gand et dans toute la Belgique. Extensif, semi-intensif, jardin sur toiture.',
+  ogTitle: '350+ Réalisations toiture verte – Bruxelles & Belgique',
+  ogDescription: 'Galerie de nos projets toitures vertes : extensif, semi-intensif, jardin sur toiture, Bruxelles et Belgique.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/realisations' }] })
+useHead({
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/realisations' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Accueil', url: 'https://www.toitureverte.be/' },
+    { name: 'Réalisations', url: 'https://www.toitureverte.be/realisations' },
+  ])) }],
+})
+useSeoAlternates('/realisations')
 
 const activeFilter = ref('all')
 

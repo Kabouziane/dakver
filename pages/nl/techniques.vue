@@ -88,10 +88,22 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Technieken & Effecten Groendak – EPC-impact | ToitureVerte',
-  description: 'Complete gids over groendaktechnieken: structuur, substraten, planten, effecten op isolatie, water, biodiversiteit en EPC-impact in België.',
+  title: 'Groendak Technieken – Effecten, Isolatie & EPC-impact België',
+  description: 'Hoe werkt een groendak? Structuur, substraten, gemeten effecten: –3 à 6°C koeling, tot 80% waterretentie, 35–50 dB geluidsdemping. EPC-impact in België.',
+  ogTitle: 'Groendak technieken & effecten – ToitureVerte',
+  ogDescription: 'Structuur, materialen, gemeten effecten en EPC-impact. Wetenschappelijk onderbouwde data voor het Belgisch klimaat.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'nl' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/techniques' }] })
+useHead({
+  htmlAttrs: { lang: 'nl' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/techniques' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Home', url: 'https://www.toitureverte.be/nl' },
+    { name: 'Technieken & Effecten', url: 'https://www.toitureverte.be/nl/techniques' },
+  ])) }],
+})
+useSeoAlternates('/techniques')
 
 const effects = [
   { icon: '🌡️', title: 'Thermische isolatie & comfort', description: 'Verminderd verwarmings- en koelingsverbruik dankzij de thermische massa van het vochtige substraat en de schaduw van de begroeiing.', metrics: [{ value: '–3 à 6°C', label: 'Binnentemperatuur zomer' }, { value: '–10 à 15%', label: 'Koelingsverbruik' }] },

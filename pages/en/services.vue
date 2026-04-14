@@ -50,10 +50,22 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Green Roof Services – ToitureVerte Belgium',
-  description: 'Extensive, semi-intensive, intensive green roofs and maintenance. Tailored solutions in Brussels and across Belgium. Free quote.',
+  title: 'Green Roof Services Brussels – Extensive, Intensive & Rooftop Garden',
+  description: 'Green roof installation in Brussels: extensive (5–10 cm), semi-intensive, rooftop garden. Free quote. 6% VAT. RENOLUTION E5 grant: up to €50/m².',
+  ogTitle: 'Green roof services Brussels – ToitureVerte',
+  ogDescription: 'Extensive, semi-intensive, rooftop garden. Tailored solutions in Brussels and Belgium. Free quote.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'en' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/services' }] })
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/services' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Home', url: 'https://www.toitureverte.be/en' },
+    { name: 'Services', url: 'https://www.toitureverte.be/en/services' },
+  ])) }],
+})
+useSeoAlternates('/services')
 
 const services = [
   {

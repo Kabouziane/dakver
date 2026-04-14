@@ -337,39 +337,64 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Techniques, Effets Positifs & Impact PEB – Toiture Verte',
-  description: 'Guide complet sur les techniques de toiture verte : structure, substrats, végétaux, effets sur isolation, eau, biodiversité, qualité de l\'air et impact sur le PEB en Belgique.',
-  ogTitle: 'Techniques & effets d\'une toiture verte – ToitureVerte Belgique',
-  ogDescription: 'Structure, matériaux, effets positifs mesurés et impact détaillé sur le PEB. Tout comprendre avant de végétaliser votre toiture.',
+  title: 'Techniques Toiture Verte – Effets, Isolation & Impact PEB Belgique',
+  description: 'Comment fonctionne une toiture verte ? Structure, substrats, effets mesurés sur isolation (–3 à 6°C), eau (jusqu\'à 80%), biodiversité et impact sur le PEB en Belgique.',
+  ogTitle: 'Techniques & effets d\'une toiture verte – ToitureVerte',
+  ogDescription: 'Structure, matériaux, effets positifs mesurés et impact PEB. Données scientifiques validées pour le climat belge.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
 useHead({
   link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/techniques' }],
-  script: [{
-    type: 'application/ld+json',
-    innerHTML: JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'Quelle est la valeur U d\'une toiture verte extensive ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Une toiture verte extensive bien conçue atteint une valeur U de 0,15 à 0,25 W/m²K (selon l\'épaisseur d\'isolation et de substrat), contre 0,5 à 2,5 W/m²K pour un toit plat conventionnel non isolé. Le substrat humide joue un rôle d\'isolation supplémentaire en hiver.',
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Quelle est la valeur U d\'une toiture verte extensive ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une toiture verte extensive bien conçue atteint une valeur U de 0,15 à 0,25 W/m²K, contre 0,5 à 2,5 W/m²K pour un toit plat conventionnel non isolé.',
+            },
           },
-        },
-        {
-          '@type': 'Question',
-          name: 'Une toiture verte améliore-t-elle le certificat PEB ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Oui. En améliorant la résistance thermique de la toiture (valeur R plus élevée, valeur U plus faible), une toiture verte réduit les besoins en chauffage et en climatisation, ce qui améliore le score PEB. Selon la situation initiale, il est possible de progresser d\'une à deux classes PEB (ex. de D à C ou de C à B).',
+          {
+            '@type': 'Question',
+            name: 'Une toiture verte améliore-t-elle le certificat PEB ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Oui. Une toiture verte réduit les besoins en chauffage et climatisation. Selon la situation initiale, on peut progresser d\'une à deux classes PEB (ex. de D à C ou C à B).',
+            },
           },
-        },
-      ],
-    }),
-  }],
+          {
+            '@type': 'Question',
+            name: 'Combien de dB une toiture verte réduit-elle le bruit ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une toiture extensive (~50 kg/m²) atténue le bruit de 35 dB. Une toiture intensive (grande masse) peut atteindre 50 dB d\'atténuation.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quel est le pourcentage de rétention d\'eau d\'une toiture verte ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une toiture extensive retient jusqu\'à 50% des précipitations avant saturation. Une toiture intensive retient environ 80%. Cela réduit considérablement les pics d\'écoulement en zone urbaine.',
+            },
+          },
+        ],
+      }),
+    },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+      { name: 'Accueil', url: 'https://www.toitureverte.be/' },
+      { name: 'Techniques & Effets', url: 'https://www.toitureverte.be/techniques' },
+    ])) },
+  ],
 })
+useSeoAlternates('/techniques')
 
 const selectedLayer = ref<number | null>(null)
 

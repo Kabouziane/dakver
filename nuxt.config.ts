@@ -3,7 +3,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/sitemap',
   ],
 
   app: {
@@ -20,15 +19,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-  },
-
-  site: {
-    url: 'https://www.toitureverte.be',
-    name: 'ToitureVerte',
-  },
-
-  sitemap: {
-    sitemaps: true,
   },
 
   routeRules: {

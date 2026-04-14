@@ -186,12 +186,24 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Green Roof Installation Brussels & Belgium | ToitureVerte',
-  description: 'ToitureVerte — green roof specialist in Brussels and across Belgium. Extensive, semi-intensive, intensive green roofs and roof gardens. Free quote.',
+  title: 'Green Roof Brussels – Installation & Free Quote | ToitureVerte',
+  description: 'Green roof specialist in Brussels. Extensive, semi-intensive, roof garden. RENOLUTION E5 grant: up to €50/m². 350+ projects in Belgium. Free quote.',
+  ogTitle: 'Green Roof Brussels – ToitureVerte',
+  ogDescription: 'Green roof specialist in Brussels and Belgium. Free quote within 24h. RENOLUTION E5: up to €50/m² grant.',
   ogType: 'website',
   ogUrl: 'https://www.toitureverte.be/en',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'en' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en' }] })
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en' }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(localBusinessSchema) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(webSiteSchema) },
+  ],
+})
+useSeoAlternates('')
 
 const stats = [
   { value: '10+',    label: 'Years of Experience' },

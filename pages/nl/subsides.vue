@@ -65,10 +65,25 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Subsidies & Premies Groendak België 2025 | ToitureVerte',
-  description: 'Alle financiële hulp voor dakbegroeining in België: premies Brussel (30 €/m²), Wallonië, Vlaanderen, btw 6%, groene leningen. Volledige gids 2025.',
+  title: 'Groendak Subsidies Brussel 2025 – RENOLUTION E5 tot 50 €/m²',
+  description: 'Volledige gids groendak subsidies 2025: RENOLUTION E5 Brussel (10–50 €/m²), Wallonië, Vlaanderen, btw 6%. Combineer tegemoetkomingen voor uw project.',
+  ogTitle: 'Groendak premies Brussel 2025 – RENOLUTION E5',
+  ogDescription: 'RENOLUTION E5: tot 50 €/m² in Brussel op basis van uw inkomen. Gids subsidies Wallonië, Vlaanderen + btw 6%.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'nl' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/subsides' }] })
+useHead({
+  htmlAttrs: { lang: 'nl' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/subsides' }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(subsideFaqSchemaNL) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+      { name: 'Home', url: 'https://www.toitureverte.be/nl' },
+      { name: 'Subsidies & Premies', url: 'https://www.toitureverte.be/nl/subsides' },
+    ])) },
+  ],
+})
+useSeoAlternates('/subsides')
 
 const regions = [
   { flag: '🏛️', name: 'Brussels Hoofdstedelijk Gewest', max: 'tot 50 000 €' },

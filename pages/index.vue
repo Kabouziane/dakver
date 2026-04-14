@@ -208,32 +208,25 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Végétalisation de toitures à Bruxelles & Belgique | ToitureVerte',
-  description: 'ToitureVerte, spécialiste en végétalisation de toitures à Bruxelles et en Belgique. Toitures extensives, semi-intensives, jardins sur toiture. Devis gratuit.',
+  title: 'Toiture Verte Bruxelles – Pose Extensive & Intensive | ToitureVerte',
+  description: 'Spécialiste toiture verte à Bruxelles. Extensive, semi-intensive, daktuin. RENOLUTION E5 : jusqu\'à 50 €/m² de prime. 350+ projets en Belgique. Devis gratuit.',
+  ogTitle: 'Toiture Verte Bruxelles – ToitureVerte',
+  ogDescription: 'Spécialiste toiture verte à Bruxelles et en Belgique. Devis gratuit sous 24h. RENOLUTION E5 : jusqu\'à 50 €/m² de prime.',
   ogType: 'website',
   ogUrl: 'https://www.toitureverte.be',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
   twitterCard: 'summary_large_image',
+  twitterImage: 'https://www.toitureverte.be/og-image.jpg',
 })
 useHead({
   htmlAttrs: { lang: 'fr' },
   link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/' }],
-  script: [{
-    type: 'application/ld+json',
-    innerHTML: JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      name: 'ToitureVerte',
-      description: 'Spécialiste en végétalisation de toitures à Bruxelles et en Belgique',
-      url: 'https://www.toitureverte.be',
-      telephone: '+3225551234',
-      email: 'info@toitureverte.be',
-      address: { '@type': 'PostalAddress', addressLocality: 'Bruxelles', postalCode: '1000', addressCountry: 'BE' },
-      geo: { '@type': 'GeoCoordinates', latitude: 50.8503, longitude: 4.3517 },
-      areaServed: { '@type': 'Country', name: 'Belgique' },
-      priceRange: '€€',
-    }),
-  }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(localBusinessSchema) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(webSiteSchema) },
+  ],
 })
+useSeoAlternates('')
 
 const stats = [
   { value: '10+',    label: 'Années d\'expérience' },

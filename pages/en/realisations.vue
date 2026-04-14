@@ -55,10 +55,22 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Our Projects – Green Roofs in Belgium | ToitureVerte',
-  description: 'Discover ToitureVerte\'s portfolio: over 350 green roof projects in Brussels, Liège, Ghent and across Belgium.',
+  title: 'Green Roof Projects – 350+ Realisations Brussels & Belgium',
+  description: '350+ green roof projects in Brussels (Ixelles, Uccle, Schaerbeek…), Liège, Ghent and across Belgium. Extensive, semi-intensive, rooftop garden.',
+  ogTitle: '350+ Green roof projects – Brussels & Belgium',
+  ogDescription: 'Portfolio of green roof projects: extensive, semi-intensive, rooftop garden – Brussels and Belgium.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'en' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/realisations' }] })
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/realisations' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Home', url: 'https://www.toitureverte.be/en' },
+    { name: 'Projects', url: 'https://www.toitureverte.be/en/realisations' },
+  ])) }],
+})
+useSeoAlternates('/realisations')
 
 const stats = [
   { value: '350+',   label: 'Projects Completed' },

@@ -114,10 +114,22 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Contact & Gratis Offerte – ToitureVerte Brussel',
-  description: 'Contacteer ToitureVerte voor een gratis offerte voor dakbegroeining in Brussel en België. Antwoord binnen 24u. +32 2 555 12 34.',
+  title: 'Groendak Offerte Brussel – Gratis Antwoord Binnen 24u',
+  description: 'Vraag uw gratis groendak offerte aan in Brussel. Antwoord binnen 24u. Gratis haalbaarheidsstudie: EPC-impact, RENOLUTION E5 premies, nettokostprijs.',
+  ogTitle: 'Gratis groendak offerte Brussel – ToitureVerte',
+  ogDescription: 'Gratis offerte binnen 24u. EPC-studie + RENOLUTION E5 premieberekening inbegrepen.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'nl' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/contact' }] })
+useHead({
+  htmlAttrs: { lang: 'nl' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl/contact' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Home', url: 'https://www.toitureverte.be/nl' },
+    { name: 'Contact & Offerte', url: 'https://www.toitureverte.be/nl/contact' },
+  ])) }],
+})
+useSeoAlternates('/contact')
 
 const form = reactive({ firstName: '', lastName: '', email: '', projectType: '', message: '' })
 const isSubmitting = ref(false)

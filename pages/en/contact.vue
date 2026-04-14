@@ -114,10 +114,22 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Contact & Free Quote – ToitureVerte Brussels',
-  description: 'Contact ToitureVerte for a free green roof quote in Brussels and Belgium. Response within 24 hours. +32 2 555 12 34.',
+  title: 'Green Roof Quote Brussels – Free Response Within 24h',
+  description: 'Request your free green roof quote in Brussels. Response within 24h. Free feasibility study: EPC impact, RENOLUTION E5 grants, estimated net cost.',
+  ogTitle: 'Free green roof quote Brussels – ToitureVerte',
+  ogDescription: 'Free quote within 24h. EPC study + RENOLUTION E5 grant calculation included.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'en' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/contact' }] })
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/contact' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Home', url: 'https://www.toitureverte.be/en' },
+    { name: 'Contact & Quote', url: 'https://www.toitureverte.be/en/contact' },
+  ])) }],
+})
+useSeoAlternates('/contact')
 
 const form = reactive({ firstName: '', lastName: '', email: '', projectType: '', message: '' })
 const isSubmitting = ref(false)

@@ -186,12 +186,24 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Dakbegroeining Brussel & België | ToitureVerte',
-  description: 'Specialist in dakbegroeining in Brussel en heel België. Extensieve, semi-intensieve groendaken en daktuinen. Gratis offerte. +32 2 555 12 34.',
+  title: 'Groendak Brussel – Plaatsing Extensief & Intensief | ToitureVerte',
+  description: 'Specialist groendak in Brussel. Extensief, semi-intensief, daktuin. RENOLUTION E5: tot 50 €/m² premie. 350+ projecten in België. Gratis offerte.',
+  ogTitle: 'Groendak Brussel – ToitureVerte',
+  ogDescription: 'Specialist groendak Brussel en België. Gratis offerte binnen 24u. RENOLUTION E5: tot 50 €/m² subsidie.',
   ogType: 'website',
   ogUrl: 'https://www.toitureverte.be/nl',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'nl' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl' }] })
+useHead({
+  htmlAttrs: { lang: 'nl' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/nl' }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(localBusinessSchema) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(webSiteSchema) },
+  ],
+})
+useSeoAlternates('')
 
 const stats = [
   { value: '10+',    label: 'Jaar ervaring' },

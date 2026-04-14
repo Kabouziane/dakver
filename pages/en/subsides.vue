@@ -65,10 +65,25 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Green Roof Subsidies & Grants Belgium 2025 | ToitureVerte',
-  description: 'All financial aid for green roof installation in Belgium: Brussels grants (€30/m²), Wallonia, Flanders, 6% VAT, green loans. Complete guide 2025.',
+  title: 'Green Roof Grants Brussels 2025 – RENOLUTION E5 up to €50/m²',
+  description: 'Complete guide to green roof grants 2025: RENOLUTION E5 Brussels (€10–50/m²), Wallonia, Flanders, 6% VAT. Combine subsidies to fund your project.',
+  ogTitle: 'Green roof grants Brussels 2025 – RENOLUTION E5',
+  ogDescription: 'RENOLUTION E5: up to €50/m² in Brussels based on your income. Guide to Wallonia, Flanders grants + 6% VAT.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'en' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/subsides' }] })
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/subsides' }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(subsideFaqSchemaEN) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+      { name: 'Home', url: 'https://www.toitureverte.be/en' },
+      { name: 'Subsidies & Grants', url: 'https://www.toitureverte.be/en/subsides' },
+    ])) },
+  ],
+})
+useSeoAlternates('/subsides')
 
 const regions = [
   { flag: '🏛️', name: 'Brussels Capital Region', max: 'up to €50,000' },

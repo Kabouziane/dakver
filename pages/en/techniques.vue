@@ -84,10 +84,22 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Green Roof Techniques & Effects – EPC Impact | ToitureVerte',
-  description: 'Complete guide on green roof techniques: structure, substrates, plants, effects on insulation, water, biodiversity and EPC impact in Belgium.',
+  title: 'Green Roof Techniques – Effects, Insulation & EPC Impact Belgium',
+  description: 'How does a green roof work? Structure, substrates, measured effects: –3 to 6°C cooling, up to 80% water retention, 35–50 dB noise reduction. EPC impact in Belgium.',
+  ogTitle: 'Green roof techniques & effects – ToitureVerte',
+  ogDescription: 'Structure, materials, measured effects and EPC impact. Scientific data validated for the Belgian climate.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ htmlAttrs: { lang: 'en' }, link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/techniques' }] })
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/en/techniques' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+    { name: 'Home', url: 'https://www.toitureverte.be/en' },
+    { name: 'Techniques & Effects', url: 'https://www.toitureverte.be/en/techniques' },
+  ])) }],
+})
+useSeoAlternates('/techniques')
 
 const effects = [
   { icon: '🌡️', title: 'Thermal Insulation & Comfort', description: 'Reduced heating and cooling needs thanks to the thermal mass of the moist substrate and the shading effect of the vegetation.', metrics: [{ value: '–3 to 6°C', label: 'Indoor temp. in summer' }, { value: '–10 to 15%', label: 'Cooling consumption' }] },

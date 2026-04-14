@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===== FRENCH (default) ===== -->
+  <url>
+    <loc>https://www.toitureverte.be/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/services</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/services"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/services"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/services"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/techniques</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/techniques"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/techniques"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/techniques"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/techniques"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/subsides</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/subsides"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/subsides"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/subsides"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/subsides"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/realisations</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/realisations"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/realisations"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/realisations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/realisations"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/contact"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== DUTCH ===== -->
+  <url>
+    <loc>https://www.toitureverte.be/nl</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/nl/services</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/services"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/services"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/services"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/nl/techniques</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/techniques"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/techniques"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/techniques"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/techniques"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/nl/subsides</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/subsides"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/subsides"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/subsides"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/subsides"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/nl/realisations</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/realisations"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/realisations"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/realisations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/realisations"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/nl/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/contact"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== ENGLISH ===== -->
+  <url>
+    <loc>https://www.toitureverte.be/en</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/services"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/services"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/services"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/en/techniques</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/techniques"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/techniques"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/techniques"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/techniques"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/en/subsides</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/subsides"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/subsides"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/subsides"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/subsides"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/en/realisations</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/realisations"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/realisations"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/realisations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/realisations"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.toitureverte.be/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://www.toitureverte.be/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://www.toitureverte.be/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.toitureverte.be/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.toitureverte.be/contact"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

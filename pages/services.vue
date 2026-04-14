@@ -155,12 +155,24 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Nos Services de Végétalisation de Toiture',
-  description: 'Découvrez nos services : toiture verte extensive, semi-intensive, intensive et entretien. ToitureVerte intervient à Bruxelles et dans toute la Belgique.',
-  ogTitle: 'Services de toitures vertes – ToitureVerte Belgique',
-  ogDescription: 'Toiture extensive, semi-intensive, intensive et entretien. Solutions sur-mesure à Bruxelles et en Belgique.',
+  title: 'Services Toiture Verte Bruxelles – Extensive, Intensive & Daktuin',
+  description: 'Pose toiture verte à Bruxelles : extensive (5–10 cm), semi-intensive, jardin sur toiture. Devis gratuit. TVA 6%. RENOLUTION E5 : jusqu\'à 50 €/m².',
+  ogTitle: 'Services toiture verte Bruxelles – ToitureVerte',
+  ogDescription: 'Extensive, semi-intensive, jardin sur toiture. Solutions sur-mesure à Bruxelles et en Belgique. Devis gratuit.',
+  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterCard: 'summary_large_image',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/services' }] })
+useHead({
+  link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/services' }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(serviceSchema) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumbSchema([
+      { name: 'Accueil', url: 'https://www.toitureverte.be/' },
+      { name: 'Services', url: 'https://www.toitureverte.be/services' },
+    ])) },
+  ],
+})
+useSeoAlternates('/services')
 
 const extensiveSpecs = [
   { label: 'Épaisseur substrat', value: '5 – 10 cm' },
