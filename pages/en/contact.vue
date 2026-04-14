@@ -118,7 +118,7 @@ useSeoMeta({
   description: 'Request your free green roof quote in Brussels. Response within 24h. Free feasibility study: EPC impact, RENOLUTION E5 grants, estimated net cost.',
   ogTitle: 'Free green roof quote Brussels – ToitureVerte',
   ogDescription: 'Free quote within 24h. EPC study + RENOLUTION E5 grant calculation included.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

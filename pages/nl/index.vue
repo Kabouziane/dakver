@@ -192,7 +192,7 @@ useSeoMeta({
   ogDescription: 'Specialist groendak Brussel en België. Gratis offerte binnen 24u. RENOLUTION E5: tot 50 €/m² subsidie.',
   ogType: 'website',
   ogUrl: 'https://www.toitureverte.be/nl',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

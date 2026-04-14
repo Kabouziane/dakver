@@ -92,7 +92,7 @@ useSeoMeta({
   description: 'Hoe werkt een groendak? Structuur, substraten, gemeten effecten: –3 à 6°C koeling, tot 80% waterretentie, 35–50 dB geluidsdemping. EPC-impact in België.',
   ogTitle: 'Groendak technieken & effecten – ToitureVerte',
   ogDescription: 'Structuur, materialen, gemeten effecten en EPC-impact. Wetenschappelijk onderbouwde data voor het Belgisch klimaat.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

@@ -118,7 +118,7 @@ useSeoMeta({
   description: 'Vraag uw gratis groendak offerte aan in Brussel. Antwoord binnen 24u. Gratis haalbaarheidsstudie: EPC-impact, RENOLUTION E5 premies, nettokostprijs.',
   ogTitle: 'Gratis groendak offerte Brussel – ToitureVerte',
   ogDescription: 'Gratis offerte binnen 24u. EPC-studie + RENOLUTION E5 premieberekening inbegrepen.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

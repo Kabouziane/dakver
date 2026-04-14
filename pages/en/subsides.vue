@@ -69,7 +69,7 @@ useSeoMeta({
   description: 'Complete guide to green roof grants 2025: RENOLUTION E5 Brussels (€10–50/m²), Wallonia, Flanders, 6% VAT. Combine subsidies to fund your project.',
   ogTitle: 'Green roof grants Brussels 2025 – RENOLUTION E5',
   ogDescription: 'RENOLUTION E5: up to €50/m² in Brussels based on your income. Guide to Wallonia, Flanders grants + 6% VAT.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

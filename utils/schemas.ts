@@ -5,7 +5,7 @@
  */
 
 const BASE_URL = 'https://www.toitureverte.be'
-const OG_IMAGE  = `${BASE_URL}/og-image.jpg`
+const OG_IMAGE  = `${BASE_URL}/og-image.svg`
 
 // All 19 Brussels communes + major Belgian cities — used in areaServed
 // This is the key signal for "near me" and city-level local searches

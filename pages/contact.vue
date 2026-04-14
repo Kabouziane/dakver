@@ -268,7 +268,7 @@ useSeoMeta({
   description: 'Demandez votre devis toiture verte gratuit à Bruxelles. Réponse sous 24h. Étude de faisabilité offerte : impact PEB, primes RENOLUTION E5, coût net estimé.',
   ogTitle: 'Devis gratuit toiture verte Bruxelles – ToitureVerte',
   ogDescription: 'Devis gratuit sous 24h. Étude PEB + calcul des primes RENOLUTION E5 inclus.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

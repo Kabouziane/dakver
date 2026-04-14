@@ -54,7 +54,7 @@ useSeoMeta({
   description: 'Green roof installation in Brussels: extensive (5–10 cm), semi-intensive, rooftop garden. Free quote. 6% VAT. RENOLUTION E5 grant: up to €50/m².',
   ogTitle: 'Green roof services Brussels – ToitureVerte',
   ogDescription: 'Extensive, semi-intensive, rooftop garden. Tailored solutions in Brussels and Belgium. Free quote.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

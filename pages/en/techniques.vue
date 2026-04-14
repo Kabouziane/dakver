@@ -88,7 +88,7 @@ useSeoMeta({
   description: 'How does a green roof work? Structure, substrates, measured effects: –3 to 6°C cooling, up to 80% water retention, 35–50 dB noise reduction. EPC impact in Belgium.',
   ogTitle: 'Green roof techniques & effects – ToitureVerte',
   ogDescription: 'Structure, materials, measured effects and EPC impact. Scientific data validated for the Belgian climate.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

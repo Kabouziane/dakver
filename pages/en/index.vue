@@ -192,7 +192,7 @@ useSeoMeta({
   ogDescription: 'Green roof specialist in Brussels and Belgium. Free quote within 24h. RENOLUTION E5: up to €50/m² grant.',
   ogType: 'website',
   ogUrl: 'https://www.toitureverte.be/en',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

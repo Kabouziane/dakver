@@ -150,7 +150,7 @@ useSeoMeta({
   description: '350+ projets de végétalisation réalisés à Bruxelles (Ixelles, Uccle, Schaerbeek…), Liège, Gand et dans toute la Belgique. Extensif, semi-intensif, jardin sur toiture.',
   ogTitle: '350+ Réalisations toiture verte – Bruxelles & Belgique',
   ogDescription: 'Galerie de nos projets toitures vertes : extensif, semi-intensif, jardin sur toiture, Bruxelles et Belgique.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

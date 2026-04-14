@@ -159,7 +159,7 @@ useSeoMeta({
   description: 'Pose toiture verte à Bruxelles : extensive (5–10 cm), semi-intensive, jardin sur toiture. Devis gratuit. TVA 6%. RENOLUTION E5 : jusqu\'à 50 €/m².',
   ogTitle: 'Services toiture verte Bruxelles – ToitureVerte',
   ogDescription: 'Extensive, semi-intensive, jardin sur toiture. Solutions sur-mesure à Bruxelles et en Belgique. Devis gratuit.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

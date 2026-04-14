@@ -54,7 +54,7 @@ useSeoMeta({
   description: 'Plaatsing groendak Brussel: extensief (5–10 cm), semi-intensief, daktuin. Gratis offerte. Btw 6%. RENOLUTION E5: tot 50 €/m² subsidie.',
   ogTitle: 'Groendak diensten Brussel – ToitureVerte',
   ogDescription: 'Extensief, semi-intensief, daktuin. Op maat in Brussel en België. Gratis offerte.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

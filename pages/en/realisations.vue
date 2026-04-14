@@ -59,7 +59,7 @@ useSeoMeta({
   description: '350+ green roof projects in Brussels (Ixelles, Uccle, Schaerbeek…), Liège, Ghent and across Belgium. Extensive, semi-intensive, rooftop garden.',
   ogTitle: '350+ Green roof projects – Brussels & Belgium',
   ogDescription: 'Portfolio of green roof projects: extensive, semi-intensive, rooftop garden – Brussels and Belgium.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

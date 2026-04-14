@@ -214,9 +214,9 @@ useSeoMeta({
   ogDescription: 'Spécialiste toiture verte à Bruxelles et en Belgique. Devis gratuit sous 24h. RENOLUTION E5 : jusqu\'à 50 €/m² de prime.',
   ogType: 'website',
   ogUrl: 'https://www.toitureverte.be',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
-  twitterImage: 'https://www.toitureverte.be/og-image.jpg',
+  twitterImage: 'https://www.toitureverte.be/og-image.svg',
 })
 useHead({
   htmlAttrs: { lang: 'fr' },

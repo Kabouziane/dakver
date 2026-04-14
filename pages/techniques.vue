@@ -341,7 +341,7 @@ useSeoMeta({
   description: 'Comment fonctionne une toiture verte ? Structure, substrats, effets mesurés sur isolation (–3 à 6°C), eau (jusqu\'à 80%), biodiversité et impact sur le PEB en Belgique.',
   ogTitle: 'Techniques & effets d\'une toiture verte – ToitureVerte',
   ogDescription: 'Structure, matériaux, effets positifs mesurés et impact PEB. Données scientifiques validées pour le climat belge.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

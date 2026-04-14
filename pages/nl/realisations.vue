@@ -59,7 +59,7 @@ useSeoMeta({
   description: '350+ groendakprojecten in Brussel (Elsene, Ukkel, Schaarbeek…), Luik, Gent en heel België. Extensief, semi-intensief, daktuin.',
   ogTitle: '350+ Groendak realisaties – Brussel & België',
   ogDescription: 'Galerij groendakprojecten: extensief, semi-intensief, daktuin – Brussel en België.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

@@ -69,7 +69,7 @@ useSeoMeta({
   description: 'Volledige gids groendak subsidies 2025: RENOLUTION E5 Brussel (10–50 €/m²), Wallonië, Vlaanderen, btw 6%. Combineer tegemoetkomingen voor uw project.',
   ogTitle: 'Groendak premies Brussel 2025 – RENOLUTION E5',
   ogDescription: 'RENOLUTION E5: tot 50 €/m² in Brussel op basis van uw inkomen. Gids subsidies Wallonië, Vlaanderen + btw 6%.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({

@@ -295,7 +295,7 @@ useSeoMeta({
   description: 'Guide complet des subsides toiture verte 2025 : RENOLUTION E5 Bruxelles (10–50 €/m²), Wallonie, Flandre, TVA 6%. Cumulez les aides pour financer votre projet.',
   ogTitle: 'Primes toiture verte Bruxelles 2025 – RENOLUTION E5',
   ogDescription: 'RENOLUTION E5 : jusqu\'à 50 €/m² à Bruxelles selon vos revenus. Guide des aides Wallonie, Flandre + TVA 6%.',
-  ogImage: 'https://www.toitureverte.be/og-image.jpg',
+  ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
 useHead({
