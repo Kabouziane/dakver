@@ -52,6 +52,54 @@
           </div>
         </div>
 
+        <!-- RENOLUTION E5 — Tableau des montants par catégorie de revenus -->
+        <div class="mb-10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="badge">RENOLUTION — Prime E5</span>
+            <span class="text-sm text-gray-500">renolution.brussels · Demande après travaux</span>
+          </div>
+          <div class="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-brand-700 text-white">
+                  <th class="text-left px-5 py-4 font-semibold rounded-tl-2xl">Type de toiture</th>
+                  <th class="text-center px-4 py-4 font-semibold">
+                    <div>Cat. I</div>
+                    <div class="text-xs font-normal opacity-80">Hauts revenus</div>
+                  </th>
+                  <th class="text-center px-4 py-4 font-semibold">
+                    <div>Cat. II</div>
+                    <div class="text-xs font-normal opacity-80">Revenus moyens</div>
+                  </th>
+                  <th class="text-center px-4 py-4 font-semibold rounded-tr-2xl">
+                    <div>Cat. III</div>
+                    <div class="text-xs font-normal opacity-80">Bas revenus</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(row, i) in renolutionE5" :key="row.type"
+                  :class="i % 2 === 0 ? 'bg-white' : 'bg-gray-50'">
+                  <td class="px-5 py-4">
+                    <p class="font-semibold text-gray-900">{{ row.type }}</p>
+                    <p class="text-xs text-gray-500 mt-0.5">{{ row.desc }}</p>
+                  </td>
+                  <td class="px-4 py-4 text-center font-bold text-brand-700">{{ row.cat1 }}</td>
+                  <td class="px-4 py-4 text-center font-bold text-brand-600">{{ row.cat2 }}</td>
+                  <td class="px-4 py-4 text-center font-bold text-brand-500">{{ row.cat3 }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div v-for="cat in incomeCategories" :key="cat.label" class="bg-gray-50 rounded-xl p-4 border border-gray-100">
+              <p class="text-xs font-bold text-gray-700 mb-1">{{ cat.label }}</p>
+              <p class="text-xs text-gray-500">{{ cat.desc }}</p>
+            </div>
+          </div>
+          <p class="text-xs text-gray-400 mt-3">+ Renforcement de structure (E1) : 30–50% des coûts si nécessaire · Citerne d'eau de pluie (C3) : 500–1 100 €/logement · Plafond : 50 000 €/logement cumulés sur 10 ans.</p>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
           <article v-for="prime in bruxellesPrimes" :key="prime.title"
             class="card border-l-4" :class="prime.borderColor">
@@ -198,7 +246,7 @@
         <div class="text-center mb-10">
           <span class="badge mb-3">Simulation</span>
           <h2 id="cumul-title" class="section-title">Exemple de cumul des aides</h2>
-          <p class="section-subtitle">Pour une toiture extensive de 100 m² à Bruxelles (cas type résidentiel)</p>
+          <p class="section-subtitle">Pour une toiture extensive de 100 m² à Bruxelles — propriétaire Cat. II (revenus moyens)</p>
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-sm border-collapse">
@@ -218,7 +266,7 @@
               </tr>
               <tr class="bg-brand-50 border-t-2 border-brand-200 font-bold">
                 <td class="px-4 py-3 text-brand-900">TOTAL des aides</td>
-                <td class="px-4 py-3 text-right text-brand-700 text-base">≈ 3 000 – 4 000 €</td>
+                <td class="px-4 py-3 text-right text-brand-700 text-base">≈ 2 850 €</td>
                 <td class="px-4 py-3 text-brand-700 text-xs">sur un investissement de ≈ 6 000 €</td>
               </tr>
             </tbody>
@@ -285,69 +333,82 @@ const regionSummary = [
   { id: 'flandre', name: 'Flandre', flag: '🦁', max: 'variable / commune', amountClass: 'text-yellow-600', activeBg: 'bg-yellow-50', activeBorder: 'border-yellow-400' },
 ]
 
+const renolutionE5 = [
+  { type: 'Extensive', desc: 'Substrat 5–10 cm · Sedums, mousses', cat1: '10 €/m²', cat2: '15 €/m²', cat3: '20 €/m²' },
+  { type: 'Semi-intensive', desc: 'Substrat 10–25 cm · Vivaces, graminées', cat1: '20 €/m²', cat2: '30 €/m²', cat3: '40 €/m²' },
+  { type: 'Intensive', desc: 'Substrat ≥ 25 cm · Arbustes, jardin', cat1: '30 €/m²', cat2: '40 €/m²', cat3: '50 €/m²' },
+  { type: 'Stockante en eau', desc: 'Couche graviers ≥ 5 cm', cat1: '5 €/m²', cat2: '10 €/m²', cat3: '15 €/m²' },
+]
+
+const incomeCategories = [
+  { label: 'Cat. I — Hauts revenus', desc: 'Isolé(e) ≥35 ans : R > 85 800 € · Plusieurs personnes : R > 100 800 €' },
+  { label: 'Cat. II — Revenus moyens', desc: 'Isolé(e) ≥35 ans : 43 000 € < R ≤ 85 800 € · Plusieurs personnes : 58 000 € < R ≤ 100 800 €' },
+  { label: 'Cat. III — Bas revenus', desc: 'Isolé(e) ≥35 ans : R ≤ 43 000 € · Plusieurs personnes : R ≤ 58 000 €' },
+]
+
 const bruxellesPrimes = [
   {
-    title: 'Prime "Nature dans la ville" — Particuliers',
-    amount: '30 €/m²',
+    title: 'Conditions techniques RENOLUTION E5',
+    amount: 'Obligatoire',
     badgeClass: 'bg-brand-100 text-brand-700',
     borderColor: 'border-brand-400',
-    description: 'Prime principale de Bruxelles Environnement pour la végétalisation de toitures privées. Accessible aux propriétaires de maisons unifamiliales et d\'immeubles à appartements.',
+    description: 'La prime RENOLUTION E5 s\'applique aux toitures végétalisées neuves ou en rénovation sur des immeubles de plus de 10 ans. Isolation préalable prise en compte.',
     conditions: [
-      'Surface minimale : 10 m²',
-      'Maximum : 5 000 € par demande',
-      'Toiture plane ou pente < 10°',
-      'Couche drainante + substrat certifié FLL',
-      'Travaux réalisés par un professionnel',
-      'Demande à introduire avant le début des travaux',
+      'Isolation obligatoire R ≥ 4 m²K/W (isolation antérieure acceptée)',
+      'Pente minimale de 2 % pour l\'évacuation de l\'eau',
+      'Substrat conforme aux épaisseurs par type (5–10 / 10–25 / ≥25 cm)',
+      'Entrepreneur inscrit à la BCE et assujetti à la TVA belge',
+      'Demande à introduire après travaux, max. 12 mois après la dernière facture',
+      'Dépôt uniquement en ligne via irisbox.irisnet.be',
     ],
   },
   {
-    title: 'Prime "Nature dans la ville" — Professionnels / Associations',
-    amount: 'jusqu\'à 50 €/m²',
-    badgeClass: 'bg-brand-100 text-brand-700',
-    borderColor: 'border-brand-600',
-    description: 'Pour les entreprises, ASBL, syndics et gestionnaires d\'immeubles. Conditions techniques identiques mais plafond et taux plus élevés.',
-    conditions: [
-      'Surface minimale : 50 m²',
-      'Maximum : 50 000 € par projet',
-      'Dossier technique complet requis',
-      'Engagement de maintenance sur 5 ans',
-      'Rapport de suivi annuel à transmettre',
-    ],
-  },
-  {
-    title: 'Prime eau pluviale (Bruxelles)',
-    amount: 'jusqu\'à 2 500 €',
+    title: 'Prime citerne d\'eau de pluie — C3',
+    amount: '500–1 100 €',
     badgeClass: 'bg-blue-100 text-blue-700',
     borderColor: 'border-blue-400',
-    description: 'Aide pour l\'installation de systèmes de récupération d\'eau de pluie, souvent combinée avec une toiture verte pour maximiser la gestion des eaux.',
+    description: 'Aide complémentaire pour l\'installation d\'une citerne de récupération d\'eau de pluie. Cumulable avec la prime toiture verte E5 dans la même demande.',
     conditions: [
-      'Citerne de récupération ≥ 3 000 litres',
-      'Raccordement WC et/ou arrosage',
-      'Cumulable avec la prime toiture verte',
+      'Capacité minimale : 1 000 litres',
+      'Raccordement à au minimum 1 appareil sanitaire',
+      'Bonus capacité tampon : +100 à +200 €/logement pour 1 000 L supplémentaires',
+      'Montant selon catégorie de revenus : 500 € (Cat. I) · 750 € (Cat. II) · 1 100 € (Cat. III)',
     ],
   },
   {
-    title: 'Prime Énergie — Isolation de toiture',
-    amount: '15 – 30 €/m²',
+    title: 'Renforcement de structure — E1',
+    amount: '30–50 % des coûts',
     badgeClass: 'bg-orange-100 text-orange-700',
     borderColor: 'border-orange-400',
-    description: 'Si la végétalisation est couplée à une isolation thermique performante (R ≥ 4,5 m²K/W), la prime énergie de Bruxelles peut être cumulée.',
+    description: 'Si la structure portante doit être renforcée pour supporter le poids d\'une toiture verte, les travaux de renforcement peuvent également être subsidiés.',
     conditions: [
-      'Valeur R de l\'isolation ≥ 4,5 m²K/W',
-      'Travaux réalisés par entrepreneur agréé',
-      'Factures détaillées avec décomposition matériaux/pose',
-      'Revenus du ménage pris en compte (prime modulée)',
+      'Uniquement si le renforcement est nécessaire pour accueillir la toiture verte',
+      '30% (Cat. I) · 40% (Cat. II) · 50% (Cat. III) des coûts éligibles',
+      'Rapport d\'ingénieur en stabilité recommandé',
+      'À intégrer dans la même demande que la prime E5',
+    ],
+  },
+  {
+    title: 'Crédit ECORENO — Fonds du Logement',
+    amount: '1,5 % ou 2,5 %',
+    badgeClass: 'bg-green-100 text-green-700',
+    borderColor: 'border-green-400',
+    description: 'Crédit à taux réduit pour financer l\'ensemble des travaux de rénovation énergétique. Cumulable avec les primes RENOLUTION.',
+    conditions: [
+      'Revenus max. 69 721 € (isolé) ou 88 736 € (ménage) + 5 000 €/personne à charge',
+      'Crédit hypothécaire : max. 30 ans · Crédit consommation : max. 25 000 €',
+      'Uniquement propriétaire-occupant ou futur acquéreur',
+      'Via le Fonds du Logement de la Région bruxelloise (fonds.brussels)',
     ],
   },
 ]
 
 const bxlSteps = [
-  'Contacter Bruxelles Environnement ou ToitureVerte pour vérifier l\'éligibilité',
-  'Introduire la demande de prime AVANT le début des travaux (formulaire en ligne)',
-  'Réaliser les travaux avec les devis approuvés',
-  'Envoyer les factures et photos à Bruxelles Environnement dans les 12 mois',
-  'Recevoir le paiement de la prime (délai : 3 à 6 mois)',
+  'Contacter ToitureVerte pour vérifier l\'éligibilité et estimer vos primes via irisbox.irisnet.be',
+  'Réaliser les travaux avec un entrepreneur inscrit à la BCE et assujetti à la TVA belge',
+  'Rassembler les factures, preuves de paiement (virement obligatoire > 3 000 €) et photos',
+  'Introduire la demande en ligne sur irisbox.irisnet.be dans les 12 mois après la dernière facture',
+  'Recevoir le paiement de la prime (délai habituel : 3 à 6 mois après instruction du dossier)',
 ]
 
 const walloniePrimes = [
@@ -443,9 +504,10 @@ const fiscalItems = [
 ]
 
 const cumulRows = [
-  { aide: 'Prime Nature dans la ville (Bruxelles)', montant: '3 000 €', source: 'Bruxelles Environnement' },
-  { aide: 'Prime énergie isolation (si couplée)', montant: '750 €', source: 'Bruxelles Énergie' },
-  { aide: 'TVA à 6% (économie vs 21%)', montant: '≈ 450 €', source: 'SPF Finances' },
-  { aide: 'Valorisation PEB / revente', montant: 'indirecte', source: '↗ valeur immobilière' },
+  { aide: 'RENOLUTION E5 — Toiture extensive (Cat. II, 100 m²)', montant: '1 500 €', source: 'renolution.brussels' },
+  { aide: 'RENOLUTION C3 — Citerne d\'eau de pluie (Cat. II)', montant: '750 €', source: 'renolution.brussels' },
+  { aide: 'TVA à 6% (économie vs 21% sur main-d\'œuvre ≈ 3 000 €)', montant: '≈ 450 €', source: 'SPF Finances' },
+  { aide: 'Bonus Z10 — 3 primes simultanées (+10% sur primes E/F/G/H)', montant: '≈ 150 €', source: 'renolution.brussels' },
+  { aide: 'Valorisation PEB (gain 1–2 classes)', montant: 'indirecte', source: '↗ valeur immobilière' },
 ]
 </script>

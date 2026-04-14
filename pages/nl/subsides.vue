@@ -79,9 +79,9 @@ const gewesten = [
   {
     icon: '🏛️', title: 'Brussels Hoofdstedelijk Gewest',
     primes: [
-      { title: '"Natuur in de stad" — Particulieren', amount: '30 €/m²', description: 'Voor particulieren en mede-eigenaars. Maximum 5.000 € per aanvraag. Oppervlakte ≥ 20 m². Substraat ≥ 6 cm.', conditions: ['Minimale oppervlakte: 20 m²', 'Substraatdikte: ≥ 6 cm', 'Gecertificeerde installateur', 'Maximum 5.000 € per aanvraag'] },
-      { title: '"Natuur in de stad" — Professionals', amount: '50 €/m²', description: 'Voor bedrijven, vzw\'s en syndici. Maximum 50.000 € per aanvraag. Hogere subsidie, dezelfde technische vereisten.', conditions: ['Minimale oppervlakte: 50 m²', 'Hogere btw-drempel', 'Maximum 50.000 € per aanvraag', 'Gecertificeerde installateur'] },
-      { title: 'Waterpremie', amount: '2.500 €', description: 'Aanvullende premie voor regenwater­recuperatie gecombineerd met een groendak. Cumuleerbaar met de groendakpremie.', conditions: ['Gecombineerd met groendak', 'Watertank ≥ 1.500 L', 'Aangesloten op hergebruikcircuit'] },
+      { title: 'RENOLUTION E5 — Extensief dak (5–10 cm)', amount: '10–20 €/m²', description: 'Premie via renolution.brussels. Bedrag naargelang inkomenscategorie: 10 €/m² (Cat. I), 15 €/m² (Cat. II), 20 €/m² (Cat. III). Aanvraag na de werken.', conditions: ['Isolatie verplicht R ≥ 4 m²K/W (vroegere isolatie aanvaard)', 'Minimale helling 2%', 'Substraatdikte 5–10 cm', 'Aanvraag via irisbox.irisnet.be binnen 12 maanden na laatste factuur'] },
+      { title: 'RENOLUTION E5 — Semi-intensief / Intensief', amount: '20–50 €/m²', description: 'Semi-intensief (10–25 cm): 20/30/40 €/m² · Intensief (≥25 cm): 30/40/50 €/m² per inkomenscategorie I/II/III. Max. 50.000 €/woning over 10 jaar.', conditions: ['Gecertificeerde aannemer (BCE + BTW-plichtig)', 'Minimum 250 € premies per aanvraag', 'Dezelfde technische vereisten als extensief'] },
+      { title: 'RENOLUTION C3 — Regenwaterciterne', amount: '500–1.100 €', description: 'Aanvullende premie voor regenwaterrecuperatie gecombineerd met een groendak. Cumuleerbaar met premie E5.', conditions: ['Minimale capaciteit: 1.000 liter', 'Aangesloten op min. 1 sanitair toestel', 'Bonus buffercapaciteit: +100 tot +200 €/woning voor extra 1.000 L'] },
     ],
   },
   {

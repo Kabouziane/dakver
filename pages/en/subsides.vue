@@ -79,9 +79,9 @@ const allRegions = [
   {
     icon: '🏛️', title: 'Brussels Capital Region',
     grants: [
-      { title: '"Nature in the City" — Individuals', amount: '€30/m²', description: 'For private individuals and co-owners. Maximum €5,000 per application. Surface ≥ 20 m². Substrate ≥ 6 cm.', conditions: ['Minimum surface: 20 m²', 'Substrate depth: ≥ 6 cm', 'Certified installer', 'Maximum €5,000 per application'] },
-      { title: '"Nature in the City" — Professionals', amount: '€50/m²', description: 'For companies, non-profits and building managers. Maximum €50,000 per application. Same technical requirements, higher rates.', conditions: ['Minimum surface: 50 m²', 'Maximum €50,000 per application', 'Certified installer required'] },
-      { title: 'Water Grant', amount: '€2,500', description: 'Additional grant for rainwater harvesting combined with a green roof. Can be combined with the green roof grant.', conditions: ['Combined with green roof', 'Water tank ≥ 1,500 L', 'Connected to reuse circuit'] },
+      { title: 'RENOLUTION E5 — Extensive roof (5–10 cm)', amount: '€10–20/m²', description: 'Main Brussels grant via renolution.brussels. Amount by income category: €10/m² (Cat. I), €15/m² (Cat. II), €20/m² (Cat. III). Applied for after works.', conditions: ['Insulation required R ≥ 4 m²K/W (prior insulation accepted)', 'Minimum slope 2%', 'Substrate depth 5–10 cm', 'Apply via irisbox.irisnet.be within 12 months of last invoice'] },
+      { title: 'RENOLUTION E5 — Semi-intensive / Intensive', amount: '€20–50/m²', description: 'Semi-intensive (10–25 cm): €20/30/40 per m² · Intensive (≥25 cm): €30/40/50 per m² by income category I/II/III. Max. €50,000/dwelling over 10 years.', conditions: ['Registered contractor (BCE + Belgian VAT)', 'Minimum €250 grants per application', 'Same technical requirements as extensive'] },
+      { title: 'RENOLUTION C3 — Rainwater tank', amount: '€500–1,100', description: 'Additional grant for rainwater harvesting combined with a green roof. Can be combined with grant E5.', conditions: ['Minimum capacity: 1,000 litres', 'Connected to at least 1 sanitary fitting', 'Buffer capacity bonus: +€100 to +€200/dwelling for extra 1,000 L'] },
     ],
   },
   {

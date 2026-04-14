@@ -434,7 +434,7 @@ const effects = [
       { value: '–3 à 6°C', label: 'Température intérieure en été' },
       { value: '–10 à 15%', label: 'Consommation en climatisation' },
       { value: '–3 à 8%', label: 'Consommation en chauffage' },
-      { value: '× 2–3', label: 'Durée de vie de l\'étanchéité' },
+      { value: '≥ × 2', label: 'Durée de vie de l\'étanchéité' },
     ],
     details: [
       'Le substrat humide agit comme masse thermique : il absorbe la chaleur le jour et la restitue la nuit',
@@ -451,13 +451,13 @@ const effects = [
     titleColor: 'text-blue-900',
     textColor: 'text-blue-800',
     metrics: [
-      { value: '50–90%', label: 'Rétention des eaux pluviales' },
-      { value: '1–2h', label: 'Retard de restitution' },
+      { value: 'jusqu\'à 50%', label: 'Rétention extensif (avant saturation)' },
+      { value: '~80%', label: 'Rétention intensif' },
       { value: '–40%', label: 'Débit de pointe vers égouts' },
       { value: '40 L/m²', label: 'Capacité de stockage (extensif)' },
     ],
     details: [
-      'Une toiture extensive de 100 m² retient entre 30 et 80 litres d\'eau par événement pluvieux',
+      'Une toiture extensive peut retenir jusqu\'à 50% de l\'eau de pluie avant saturation ; une toiture intensive jusqu\'à 80%',
       'L\'eau est restituée progressivement par évapotranspiration, évitant la saturation des réseaux',
       'À l\'échelle de Bruxelles, la généralisation des toitures vertes réduirait significativement les risques d\'inondation',
       'La qualité de l\'eau restituée est améliorée (filtration naturelle par le substrat)',
@@ -494,9 +494,9 @@ const effects = [
     textColor: 'text-slate-700',
     metrics: [
       { value: '1–3 kg', label: 'CO₂ absorbé / m² / an' },
-      { value: '–10%', label: 'Particules fines (PM10) en surface' },
+      { value: '2 kg/an', label: 'Poussières filtrées par 10 m²' },
       { value: '–4°C', label: 'Température air ambiant (effet urbain)' },
-      { value: '–NO₂', label: 'Absorption de dioxyde d\'azote' },
+      { value: '–10%', label: 'Particules fines (PM10) en surface' },
     ],
     details: [
       'La photosynthèse des végétaux absorbe le CO₂ et rejette de l\'oxygène',
@@ -514,13 +514,13 @@ const effects = [
     titleColor: 'text-purple-900',
     textColor: 'text-purple-800',
     metrics: [
-      { value: '–8 dB', label: 'Réduction bruit (extensif)' },
-      { value: '–20 dB', label: 'Réduction bruit (intensif)' },
-      { value: '+', label: 'Confort dans les bureaux/logements' },
+      { value: '35 dB', label: 'Affaiblissement extensif (50 kg/m²)' },
+      { value: '50 dB', label: 'Affaiblissement intensif (masse élevée)' },
+      { value: '+5 dB', label: 'Gain vs toiture nue de même poids' },
       { value: '100%', label: 'Sans équipement technique' },
     ],
     details: [
-      'Le substrat absorbe les basses fréquences (trafic, avions) que les isolants conventionnels ne filtrent pas bien',
+      'Une toiture légère (40 kg/m²) offre 30 dB d\'affaiblissement ; l\'ajout d\'un extensif (50 kg/m²) porte ce chiffre à 35 dB',
       'La végétation diffuse les hautes fréquences (pluie battante, vent)',
       'Particulièrement efficace pour les bâtiments sous couloirs aériens (Bruxelles, Zaventem)',
       'Un toit intensif de 30 cm offre une performance acoustique comparable à une double cloison',

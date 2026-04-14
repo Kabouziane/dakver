@@ -91,10 +91,10 @@ useHead({ htmlAttrs: { lang: 'en' }, link: [{ rel: 'canonical', href: 'https://w
 
 const effects = [
   { icon: '🌡️', title: 'Thermal Insulation & Comfort', description: 'Reduced heating and cooling needs thanks to the thermal mass of the moist substrate and the shading effect of the vegetation.', metrics: [{ value: '–3 to 6°C', label: 'Indoor temp. in summer' }, { value: '–10 to 15%', label: 'Cooling consumption' }] },
-  { icon: '💧', title: 'Stormwater Management', description: 'Retention and progressive release of rainwater, drastically reducing peak runoff in urban areas.', metrics: [{ value: '50–90%', label: 'Rainwater retention' }, { value: '–40%', label: 'Peak flow to drains' }] },
+  { icon: '💧', title: 'Stormwater Management', description: 'Retention and progressive release of rainwater, drastically reducing peak runoff in urban areas.', metrics: [{ value: 'up to 50%', label: 'Extensive retention (before saturation)' }, { value: '~80%', label: 'Intensive retention' }] },
   { icon: '🦋', title: 'Urban Biodiversity', description: 'Creation of refuges for fauna and flora in the urban environment, contributing to ecological corridors.', metrics: [{ value: '40+', label: 'Insect species' }, { value: '15+', label: 'Bird species' }] },
-  { icon: '🌫️', title: 'Air Quality & CO₂', description: 'Capture of CO₂, fine particles and gaseous pollutants — a measurable contribution to urban air quality.', metrics: [{ value: '1–3 kg', label: 'CO₂ absorbed/m²/year' }, { value: '–10%', label: 'Fine particles (PM10)' }] },
-  { icon: '🔇', title: 'Acoustic Insulation', description: 'Reduction of external noise by absorbing sound waves in the substrate and vegetation.', metrics: [{ value: '–8 dB', label: 'Noise reduction (extensive)' }, { value: '–20 dB', label: 'Noise reduction (intensive)' }] },
+  { icon: '🌫️', title: 'Air Quality & CO₂', description: 'Capture of CO₂, fine particles and gaseous pollutants — a measurable contribution to urban air quality.', metrics: [{ value: '1–3 kg', label: 'CO₂ absorbed/m²/year' }, { value: '2 kg/year', label: 'Dust filtered per 10 m²' }] },
+  { icon: '🔇', title: 'Acoustic Insulation', description: 'Reduction of external noise by absorbing sound waves in the substrate and vegetation.', metrics: [{ value: '35 dB', label: 'Attenuation extensive (50 kg/m²)' }, { value: '50 dB', label: 'Attenuation intensive (high mass)' }] },
   { icon: '💰', title: 'Property Value', description: 'A green roof increases the attractiveness and market value of a property while reducing running costs.', metrics: [{ value: '+5–15%', label: 'Estimated property value' }, { value: '40 yrs', label: 'Waterproofing lifespan' }] },
 ]
 const epcItems = [

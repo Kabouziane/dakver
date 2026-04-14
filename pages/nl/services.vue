@@ -58,18 +58,18 @@ useHead({ htmlAttrs: { lang: 'nl' }, link: [{ rel: 'canonical', href: 'https://w
 const services = [
   {
     title: 'Extensief Groendak', icon: '🌿', badge: 'Ideaal voor grote oppervlakten',
-    description: 'Het extensieve groendak is de lichtste en meest economische oplossing. Samengesteld uit een dunne substraatlaag (5 tot 15 cm) en planten die de Belgische klimaatomstandigheden aankunnen zonder beregening of intensief onderhoud. Bijzonder geschikt voor industriële, commerciële en residentiële daken.',
-    specs: [{ label: 'Substraatdikte', value: '5–15 cm' }, { label: 'Gewicht', value: '50–150 kg/m²' }, { label: 'Richtprijs', value: '40–80 €/m²' }, { label: 'Onderhoud', value: '1–2 keer/jaar' }],
+    description: 'Het extensieve groendak is de lichtste en meest economische oplossing. Samengesteld uit een dunne substraatlaag (5 tot 10 cm) met sedums, mossen en korstmossen die de Belgische klimaatomstandigheden aankunnen zonder beregening of intensief onderhoud. Bijzonder geschikt voor industriële, commerciële en residentiële daken.',
+    specs: [{ label: 'Substraatdikte', value: '5–10 cm' }, { label: 'Gewicht (vol water)', value: '~100 kg/m²' }, { label: 'Max. helling', value: 'tot 70%' }, { label: 'Onderhoud', value: '~1 dag/jaar' }],
   },
   {
     title: 'Semi-intensief Groendak', icon: '🌸', badge: 'Balans esthetiek & gewicht',
     description: 'Het semi-intensieve groendak biedt de perfecte balans tussen licht gewicht en diversiteit aan begroeiing. Toegankelijk, esthetisch en met een gevarieerde vegetatie die het hele jaar door mooi blijft. Ideaal voor zichtbare daken en terrassen.',
-    specs: [{ label: 'Substraatdikte', value: '15–25 cm' }, { label: 'Gewicht', value: '150–300 kg/m²' }, { label: 'Richtprijs', value: '80–150 €/m²' }, { label: 'Onderhoud', value: '2–4 keer/jaar' }],
+    specs: [{ label: 'Substraatdikte', value: '10–25 cm' }, { label: 'Gewicht (vol water)', value: '100–400 kg/m²' }, { label: 'Max. helling', value: 'tot 58%' }, { label: 'Onderhoud', value: '2–3 dagen/jaar' }],
   },
   {
     title: 'Intensief / Daktuin', icon: '🏡', badge: 'Echte tuin op hoogte',
     description: 'De intensieve daktuin is een volwaardige tuin op hoogte, toegankelijk en bruikbaar. Struiken, bomen en zithoeken zijn mogelijk. Deze premium oplossing transformeert uw dak radicaal. Vereist een aangepaste draagstructuur en regelmatig onderhoud.',
-    specs: [{ label: 'Substraatdikte', value: '> 30 cm' }, { label: 'Gewicht', value: '> 300 kg/m²' }, { label: 'Richtprijs', value: '150–350 €/m²' }, { label: 'Onderhoud', value: 'Regelmatig' }],
+    specs: [{ label: 'Substraatdikte', value: '≥ 25 cm' }, { label: 'Gewicht (vol water)', value: '≥ 400 kg/m²' }, { label: 'Max. helling', value: 'tot 10%' }, { label: 'Onderhoud', value: '2–5 dagen/jaar' }],
   },
 ]
 </script>

@@ -1,14 +1,14 @@
 <template>
   <div class="w-full">
     <div class="text-center mb-6">
-      <span class="badge mb-2">{{ t('animation.badge') }}</span>
-      <h3 class="text-2xl font-bold text-gray-900">{{ t('animation.title') }}</h3>
-      <p class="text-gray-500 text-sm mt-1 max-w-xl mx-auto">{{ t('animation.subtitle') }}</p>
+      <span class="badge mb-2">{{ l.badge }}</span>
+      <h3 class="text-2xl font-bold text-gray-900">{{ l.title }}</h3>
+      <p class="text-gray-500 text-sm mt-1 max-w-xl mx-auto">{{ l.subtitle }}</p>
     </div>
 
     <div class="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-sky-50">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" class="w-full h-auto"
-        :aria-label="t('animation.ariaLabel')" role="img">
+        :aria-label="l.ariaLabel" role="img">
         <defs>
           <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#38bdf8"/>
@@ -96,7 +96,7 @@
         <!-- ══════════════════════════════════════════ -->
         <!-- Label arrow -->
         <text x="14" y="88" font-family="sans-serif" font-size="11" font-weight="600" fill="#0284c7" opacity="0.9">
-          {{ t('animation.evapLabel') }} ↑
+          {{ l.evapLabel }} ↑
         </text>
         <line x1="80" y1="85" x2="80" y2="178" stroke="#0284c7" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
 
@@ -123,10 +123,10 @@
           <circle :cx="mb.x" :cy="228 + mb.yo" r="3" fill="#93c5fd" opacity="0.45"/>
         </g>
         <text x="12" y="248" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fef3c7">
-          {{ t('animation.layers.substrate') }}
+          {{ l.layerSubstrate }}
         </text>
         <text x="12" y="261" font-family="sans-serif" font-size="9" fill="#fde68a" opacity="0.8">
-          {{ t('animation.layers.substrateDesc') }}
+          {{ l.layerSubstrateDesc }}
         </text>
 
         <!-- Filter layer (geotextile) -->
@@ -147,7 +147,7 @@
           <circle :cx="fw.x" cy="292" r="3" fill="#3b82f6" opacity="0.6"/>
         </g>
         <text x="12" y="296" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#1e40af">
-          {{ t('animation.layers.drainage') }}
+          {{ l.layerDrainage }}
         </text>
 
         <!-- Anti-root protection -->
@@ -164,10 +164,10 @@
                  Q495,328 510,337 Q525,346 540,337 Q555,328 570,337 Q585,346 590,337"
           fill="none" stroke="#d97706" stroke-width="1.2" opacity="0.5"/>
         <text x="12" y="339" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#78350f">
-          {{ t('animation.layers.insulation') }}
+          {{ l.layerInsulation }}
         </text>
         <text x="12" y="352" font-family="sans-serif" font-size="9" fill="#92400e" opacity="0.8">
-          {{ t('animation.layers.insulationDesc') }}
+          {{ l.layerInsulationDesc }}
         </text>
 
         <!-- Waterproofing membrane -->
@@ -184,7 +184,7 @@
         <line x1="0" y1="390" x2="590" y2="390" stroke="#374151" stroke-width="1.5" opacity="0.3"/>
         <line x1="0" y1="410" x2="590" y2="410" stroke="#374151" stroke-width="1.5" opacity="0.3"/>
         <text x="12" y="404" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#f3f4f6">
-          {{ t('animation.layers.structure') }}
+          {{ l.layerStructure }}
         </text>
 
         <!-- Interior zone (comfort zone) -->
@@ -197,7 +197,7 @@
           </text>
         </g>
         <text x="72" y="459" font-family="sans-serif" font-size="10" fill="#92400e">
-          {{ t('animation.layers.interior') }}
+          {{ l.layerInterior }}
         </text>
 
         <!-- Right side layer labels (right-aligned ticks) -->
@@ -221,7 +221,7 @@
         <!-- Panel title -->
         <text x="750" y="22" text-anchor="middle" font-family="sans-serif" font-size="11"
           font-weight="700" fill="#15803d" letter-spacing="1">
-          {{ t('animation.benefitsTitle').toUpperCase() }}
+          {{ l.benefitsTitle.toUpperCase() }}
         </text>
 
         <!-- ── Metric 1: Temperature ── -->
@@ -237,10 +237,10 @@
           <text x="55" y="38" font-family="sans-serif" font-size="22" font-weight="800" fill="#15803d">–4°C</text>
           <!-- Label -->
           <text x="55" y="54" font-family="sans-serif" font-size="11" font-weight="600" fill="#374151">
-            {{ t('animation.metric1.label') }}
+            {{ l.metric1Label }}
           </text>
           <text x="55" y="68" font-family="sans-serif" font-size="9.5" fill="#6b7280">
-            {{ t('animation.metric1.sub') }}
+            {{ l.metric1Sub }}
           </text>
           <!-- Progress bar -->
           <rect x="10" y="78" width="250" height="5" rx="2.5" fill="#dcfce7"/>
@@ -257,10 +257,10 @@
           <!-- Value -->
           <text x="55" y="38" font-family="sans-serif" font-size="22" font-weight="800" fill="#1d4ed8">90%</text>
           <text x="55" y="54" font-family="sans-serif" font-size="11" font-weight="600" fill="#374151">
-            {{ t('animation.metric2.label') }}
+            {{ l.metric2Label }}
           </text>
           <text x="55" y="68" font-family="sans-serif" font-size="9.5" fill="#6b7280">
-            {{ t('animation.metric2.sub') }}
+            {{ l.metric2Sub }}
           </text>
           <rect x="10" y="78" width="250" height="5" rx="2.5" fill="#dbeafe"/>
           <rect x="10" y="78" width="225" height="5" rx="2.5" fill="#3b82f6" class="bar-fill-2"/>
@@ -278,10 +278,10 @@
           <!-- Value -->
           <text x="55" y="38" font-family="sans-serif" font-size="22" font-weight="800" fill="#15803d">–3 kg</text>
           <text x="55" y="54" font-family="sans-serif" font-size="11" font-weight="600" fill="#374151">
-            {{ t('animation.metric3.label') }}
+            {{ l.metric3Label }}
           </text>
           <text x="55" y="68" font-family="sans-serif" font-size="9.5" fill="#6b7280">
-            {{ t('animation.metric3.sub') }}
+            {{ l.metric3Sub }}
           </text>
           <rect x="10" y="78" width="250" height="5" rx="2.5" fill="#dcfce7"/>
           <rect x="10" y="78" width="130" height="5" rx="2.5" fill="#16a34a" class="bar-fill-3"/>
@@ -298,10 +298,10 @@
           <!-- Value -->
           <text x="55" y="38" font-family="sans-serif" font-size="22" font-weight="800" fill="#db2777">×3</text>
           <text x="55" y="54" font-family="sans-serif" font-size="11" font-weight="600" fill="#374151">
-            {{ t('animation.metric4.label') }}
+            {{ l.metric4Label }}
           </text>
           <text x="55" y="68" font-family="sans-serif" font-size="9.5" fill="#6b7280">
-            {{ t('animation.metric4.sub') }}
+            {{ l.metric4Sub }}
           </text>
           <rect x="10" y="78" width="250" height="5" rx="2.5" fill="#fce7f3"/>
           <rect x="10" y="78" width="200" height="5" rx="2.5" fill="#ec4899" class="bar-fill-4"/>
@@ -313,7 +313,7 @@
           <!-- Hot roof (left) -->
           <rect x="8" y="8" width="118" height="34" rx="6" fill="#fee2e2"/>
           <text x="67" y="22" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#dc2626" font-weight="600">
-            {{ t('animation.tempCompare.bareRoof') }}
+            {{ l.bareRoof }}
           </text>
           <text x="67" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#dc2626" font-weight="800">
             +70°C
@@ -323,7 +323,7 @@
           <!-- Green roof (right) -->
           <rect x="144" y="8" width="118" height="34" rx="6" fill="#dcfce7"/>
           <text x="203" y="22" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#15803d" font-weight="600">
-            {{ t('animation.tempCompare.greenRoof') }}
+            {{ l.greenRoof }}
           </text>
           <text x="203" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#15803d" font-weight="800">
             +20°C
@@ -337,7 +337,7 @@
         <g transform="translate(290, 100)">
           <rect x="-62" y="-14" width="124" height="24" rx="12" fill="#0ea5e9" opacity="0.15"/>
           <text x="0" y="5" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#0369a1">
-            ↑ {{ t('animation.evapTranspLabel') }} ↑
+            ↑ {{ l.evapTranspLabel }} ↑
           </text>
         </g>
 
@@ -345,7 +345,7 @@
         <g transform="translate(400, 244)">
           <rect x="-55" y="-12" width="110" height="22" rx="11" fill="#3b82f6" opacity="0.12"/>
           <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="600" fill="#1d4ed8">
-            💧 {{ t('animation.retentionLabel') }}
+            💧 {{ l.retentionLabel }}
           </text>
         </g>
 
@@ -353,7 +353,7 @@
         <g transform="translate(400, 337)">
           <rect x="-52" y="-12" width="104" height="22" rx="11" fill="#d97706" opacity="0.15"/>
           <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="600" fill="#92400e">
-            🔥 {{ t('animation.thermalBreakLabel') }}
+            🔥 {{ l.thermalBreakLabel }}
           </text>
         </g>
       </svg>
@@ -361,16 +361,125 @@
 
     <!-- Legend -->
     <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
-      <div v-for="item in legendItems" :key="item.key" class="flex items-center gap-2 text-xs text-gray-600">
+      <div v-for="item in legendItems" :key="item.label" class="flex items-center gap-2 text-xs text-gray-600">
         <div class="w-3 h-3 rounded-full shrink-0" :class="item.color"/>
-        {{ t(item.key) }}
+        {{ item.label }}
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const lang = computed(() => {
+  if (route.path.startsWith('/en')) return 'en' as const
+  if (route.path.startsWith('/nl')) return 'nl' as const
+  return 'fr' as const
+})
+
+const labels = {
+  fr: {
+    badge: 'Visualisation interactive',
+    title: "Le cycle de l'évapotranspiration",
+    subtitle: 'Comment une toiture verte régule naturellement la température et l\'eau',
+    ariaLabel: "Animation du cycle d'évapotranspiration d'une toiture verte",
+    evapLabel: 'Vapeur d\'eau',
+    evapTranspLabel: 'Évapotranspiration',
+    retentionLabel: 'Rétention d\'eau',
+    thermalBreakLabel: 'Rupture thermique',
+    benefitsTitle: 'Effets mesurés',
+    metric1Label: 'Température de surface',
+    metric1Sub: 'vs. toiture nue en été',
+    metric2Label: 'Rétention eaux pluviales',
+    metric2Sub: 'toiture extensive 10cm',
+    metric3Label: 'CO₂ absorbé / m² / an',
+    metric3Sub: 'par photosynthèse',
+    metric4Label: 'Durée de vie membrane',
+    metric4Sub: 'protégée des UV et chocs',
+    bareRoof: 'Toiture nue',
+    greenRoof: 'Toiture verte',
+    layerSubstrate: 'Substrat de culture',
+    layerSubstrateDesc: '5–30 cm selon le type',
+    layerDrainage: 'Drainage + Géotextile',
+    layerInsulation: 'Isolation thermique',
+    layerInsulationDesc: 'λ ≤ 0,022 W/m·K',
+    layerStructure: 'Structure porteuse',
+    layerInterior: 'Confort intérieur',
+    legendEvap: 'Évapotranspiration',
+    legendRain: 'Eau de pluie retenue',
+    legendThermal: 'Isolation thermique',
+    legendBio: 'Couverture végétale',
+  },
+  nl: {
+    badge: 'Interactieve visualisatie',
+    title: 'De evapotranspiratiecyclus',
+    subtitle: 'Hoe een groendak van nature temperatuur en water reguleert',
+    ariaLabel: 'Animatie van de evapotranspiratiecyclus van een groendak',
+    evapLabel: 'Waterdamp',
+    evapTranspLabel: 'Evapotranspiratie',
+    retentionLabel: 'Waterretentie',
+    thermalBreakLabel: 'Thermische onderbreking',
+    benefitsTitle: 'Gemeten effecten',
+    metric1Label: 'Oppervlaktetemperatuur',
+    metric1Sub: 'vs. kaal dak in de zomer',
+    metric2Label: 'Retentie regenwater',
+    metric2Sub: 'extensief dak 10cm',
+    metric3Label: 'CO₂ opgenomen / m² / jaar',
+    metric3Sub: 'door fotosynthese',
+    metric4Label: 'Levensduur membraan',
+    metric4Sub: 'beschermd tegen UV en schokken',
+    bareRoof: 'Kaal dak',
+    greenRoof: 'Groendak',
+    layerSubstrate: 'Teeltsubstraat',
+    layerSubstrateDesc: '5–30 cm naargelang het type',
+    layerDrainage: 'Drainage + Geotextiel',
+    layerInsulation: 'Thermische isolatie',
+    layerInsulationDesc: 'λ ≤ 0,022 W/m·K',
+    layerStructure: 'Dragende structuur',
+    layerInterior: 'Binnencomfort',
+    legendEvap: 'Evapotranspiratie',
+    legendRain: 'Gehouden regenwater',
+    legendThermal: 'Thermische isolatie',
+    legendBio: 'Vegetatiedek',
+  },
+  en: {
+    badge: 'Interactive visualisation',
+    title: 'The evapotranspiration cycle',
+    subtitle: 'How a green roof naturally regulates temperature and water',
+    ariaLabel: 'Animation of the evapotranspiration cycle of a green roof',
+    evapLabel: 'Water vapour',
+    evapTranspLabel: 'Evapotranspiration',
+    retentionLabel: 'Water retention',
+    thermalBreakLabel: 'Thermal break',
+    benefitsTitle: 'Measured effects',
+    metric1Label: 'Surface temperature',
+    metric1Sub: 'vs. bare roof in summer',
+    metric2Label: 'Rainwater retention',
+    metric2Sub: 'extensive roof 10cm',
+    metric3Label: 'CO₂ absorbed / m² / year',
+    metric3Sub: 'by photosynthesis',
+    metric4Label: 'Membrane lifespan',
+    metric4Sub: 'protected from UV and impacts',
+    bareRoof: 'Bare roof',
+    greenRoof: 'Green roof',
+    layerSubstrate: 'Growing substrate',
+    layerSubstrateDesc: '5–30 cm depending on type',
+    layerDrainage: 'Drainage + Geotextile',
+    layerInsulation: 'Thermal insulation',
+    layerInsulationDesc: 'λ ≤ 0.022 W/m·K',
+    layerStructure: 'Load-bearing structure',
+    layerInterior: 'Interior comfort',
+    legendEvap: 'Evapotranspiration',
+    legendRain: 'Retained rainwater',
+    legendThermal: 'Thermal insulation',
+    legendBio: 'Vegetation cover',
+  },
+}
+
+const l = computed(() => labels[lang.value])
 
 /* ─── Plant data ─── */
 const plants = [
@@ -444,12 +553,12 @@ const concreteAggs = Array.from({ length: 22 }, (_, i) => ({
 }))
 
 /* ─── Legend items ─── */
-const legendItems = [
-  { key: 'animation.legend.evap',    color: 'bg-sky-300' },
-  { key: 'animation.legend.rain',    color: 'bg-blue-400' },
-  { key: 'animation.legend.thermal', color: 'bg-amber-400' },
-  { key: 'animation.legend.bio',     color: 'bg-green-500' },
-]
+const legendItems = computed(() => [
+  { label: l.value.legendEvap,    color: 'bg-sky-300' },
+  { label: l.value.legendRain,    color: 'bg-blue-400' },
+  { label: l.value.legendThermal, color: 'bg-amber-400' },
+  { label: l.value.legendBio,     color: 'bg-green-500' },
+])
 </script>
 
 <style scoped>

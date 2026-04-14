@@ -27,7 +27,7 @@
             <span class="badge mb-3">Idéale pour grandes surfaces</span>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Toiture verte extensive</h2>
             <p class="text-gray-600 leading-relaxed mb-6">
-              La toiture extensive est la solution de végétalisation la plus légère et la plus économique. Elle est composée d'une fine couche de substrat (5 à 15 cm) et de végétaux capables de supporter les conditions climatiques belges sans irrigation ni entretien intensif.
+              La toiture extensive est la solution de végétalisation la plus légère et la plus économique. Elle est composée d'une fine couche de substrat (5 à 10 cm) plantée de végétaux — sedums, mousses, lichens — capables de supporter les conditions climatiques belges sans irrigation ni entretien intensif.
             </p>
             <p class="text-gray-600 leading-relaxed mb-6">
               Particulièrement adaptée aux toitures industrielles, commerciales et résidentielles de grande surface, cette solution offre un excellent rapport qualité/prix pour la végétalisation à Bruxelles et en Belgique.
@@ -64,7 +64,7 @@
             <span class="badge mb-3">Compromis idéal</span>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Toiture semi-intensive</h2>
             <p class="text-gray-600 leading-relaxed mb-6">
-              La toiture semi-intensive offre un compromis parfait entre légèreté et diversité végétale. Avec une couche de substrat de 15 à 25 cm, elle permet une végétation plus variée : vivaces, graminées, herbes aromatiques et petits arbustes.
+              La toiture semi-intensive offre un compromis parfait entre légèreté et diversité végétale. Avec une couche de substrat de 10 à 25 cm, elle permet une végétation plus variée : vivaces, graminées, herbes aromatiques et petits arbustes.
             </p>
             <p class="text-gray-600 leading-relaxed mb-6">
               Cette solution est idéale pour les toitures accessibles qui demandent un aspect esthétique soigné tout en maintenant un entretien raisonnable.
@@ -87,7 +87,7 @@
             <span class="badge mb-3">Jardin en hauteur</span>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Toiture intensive & jardins</h2>
             <p class="text-gray-600 leading-relaxed mb-6">
-              La toiture intensive est un véritable jardin suspendu. Avec une couche de substrat supérieure à 30 cm, elle peut accueillir arbustes, arbres fruitiers, espaces de détente, potagers et même des terrasses aménagées.
+              La toiture intensive est un véritable jardin suspendu. Avec une couche de substrat d'au moins 25 cm (jusqu'à 1 m pour les arbres), elle peut accueillir arbustes, arbres fruitiers, espaces de détente, potagers et terrasses aménagées. Une vérification structurelle préalable par un ingénieur en stabilité est indispensable.
             </p>
             <p class="text-gray-600 leading-relaxed mb-6">
               Cette solution haut de gamme transforme radicalement les toits de vos immeubles ou maisons. Elle requiert une structure portante adaptée et un entretien régulier, mais offre un espace de vie unique au-dessus de Bruxelles.
@@ -163,24 +163,24 @@ useSeoMeta({
 useHead({ link: [{ rel: 'canonical', href: 'https://www.toitureverte.be/services' }] })
 
 const extensiveSpecs = [
-  { label: 'Épaisseur substrat', value: '5 – 15 cm' },
-  { label: 'Poids', value: '50 – 150 kg/m²' },
-  { label: 'Prix indicatif', value: '40 – 80 €/m²' },
-  { label: 'Entretien', value: '1 – 2 fois/an' },
+  { label: 'Épaisseur substrat', value: '5 – 10 cm' },
+  { label: 'Poids (gorgé d\'eau)', value: '~100 kg/m²' },
+  { label: 'Pente max. acceptée', value: 'jusqu\'à 70 %' },
+  { label: 'Entretien', value: '~1 jour/an' },
 ]
 
 const semiSpecs = [
-  { label: 'Épaisseur substrat', value: '15 – 25 cm' },
-  { label: 'Poids', value: '150 – 300 kg/m²' },
-  { label: 'Prix indicatif', value: '80 – 150 €/m²' },
-  { label: 'Entretien', value: '2 – 4 fois/an' },
+  { label: 'Épaisseur substrat', value: '10 – 25 cm' },
+  { label: 'Poids (gorgé d\'eau)', value: '100 – 400 kg/m²' },
+  { label: 'Pente max. acceptée', value: 'jusqu\'à 58 %' },
+  { label: 'Entretien', value: '2 – 3 jours/an' },
 ]
 
 const intensiveSpecs = [
-  { label: 'Épaisseur substrat', value: '> 30 cm' },
-  { label: 'Poids', value: '> 300 kg/m²' },
-  { label: 'Prix indicatif', value: '150 – 350 €/m²' },
-  { label: 'Entretien', value: 'Régulier' },
+  { label: 'Épaisseur substrat', value: '≥ 25 cm' },
+  { label: 'Poids (gorgé d\'eau)', value: '≥ 400 kg/m²' },
+  { label: 'Pente max. acceptée', value: 'jusqu\'à 10 %' },
+  { label: 'Entretien', value: '2 – 5 jours/an' },
 ]
 
 const maintenanceTasks = [
