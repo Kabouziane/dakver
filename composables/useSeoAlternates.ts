@@ -8,8 +8,8 @@ export function useSeoAlternates(slug: string) {
   const base = 'https://www.toitureverte.be'
   // FR is the root, NL under /nl/, EN under /en/
   const frHref = slug ? `${base}${slug}` : `${base}/`
-  const nlHref = `${base}/nl${slug || ''}`
-  const enHref = `${base}/en${slug || ''}`
+  const nlHref = slug ? `${base}/nl${slug}` : `${base}/nl/`
+  const enHref = slug ? `${base}/en${slug}` : `${base}/en/`
 
   useHead({
     link: [

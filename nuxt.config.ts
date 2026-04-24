@@ -30,14 +30,14 @@ export default defineNuxtConfig({
     '/realisations': { prerender: true },
     '/contact': { prerender: true },
     // Dutch
-    '/nl': { prerender: true },
+    '/nl/': { prerender: true },
     '/nl/services': { prerender: true },
     '/nl/techniques': { prerender: true },
     '/nl/subsides': { prerender: true },
     '/nl/realisations': { prerender: true },
     '/nl/contact': { prerender: true },
     // English
-    '/en': { prerender: true },
+    '/en/': { prerender: true },
     '/en/services': { prerender: true },
     '/en/techniques': { prerender: true },
     '/en/subsides': { prerender: true },
