@@ -73,10 +73,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14">
           <span class="badge mb-3">What We Offer</span>
-          <h2 class="section-title">Our Green Roof Services</h2>
-          <p class="section-subtitle">From simple extensive roofs to rooftop gardens, ToitureVerte manages every project from A to Z across Belgium.</p>
+          <h2 class="section-title">All Our Expertise</h2>
+          <p class="section-subtitle">Green roofs, solar panels, rainwater harvesting, green facades — ToitureVerte manages every sustainability project from A to Z.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <article v-for="service in services" :key="service.title"
             class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 group">
             <div :class="`h-3 ${service.color}`" />
@@ -92,7 +92,7 @@
                   {{ feat }}
                 </li>
               </ul>
-              <NuxtLink to="/en/services" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              <NuxtLink :to="service.href || '/en/services'" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                 Learn more
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </NuxtLink>
@@ -218,9 +218,13 @@ const benefits = [
   { icon: '💰', title: 'Property Value',        description: 'A vegetated roof increases the value of your property by 5 to 15% and improves its market appeal.' },
 ]
 const services = [
-  { title: 'Extensive Green Roof', icon: '🌿', color: 'bg-brand-400', description: 'Lightweight and cost-effective, ideal for large inaccessible surfaces. Low maintenance, reduced weight.', features: ['Substrate 5–15 cm', 'Sedums & mosses', 'Weight 50–150 kg/m²', 'Minimal maintenance'] },
-  { title: 'Semi-intensive Green Roof', icon: '🌸', color: 'bg-earth-400', description: 'The perfect balance between lightness and plant diversity. Accessible, aesthetic with varied vegetation.', features: ['Substrate 15–25 cm', 'Perennials & grasses', 'Weight 150–300 kg/m²', 'Moderate maintenance'] },
-  { title: 'Intensive / Roof Garden', icon: '🏡', color: 'bg-green-500', description: 'A true garden in the sky — accessible and usable. Shrubs, trees and relaxation areas are possible.', features: ['Substrate > 30 cm', 'Shrubs & trees', 'Weight > 300 kg/m²', 'Regular maintenance'] },
+  { title: 'Extensive Green Roof', icon: '🌿', color: 'bg-brand-400', description: 'Lightweight and cost-effective, ideal for large inaccessible surfaces. Low maintenance, reduced weight.', features: ['Substrate 5–15 cm', 'Sedums & mosses', 'Weight 50–150 kg/m²', 'Minimal maintenance'], href: '/en/services#extensive' },
+  { title: 'Semi-intensive Green Roof', icon: '🌸', color: 'bg-earth-400', description: 'The perfect balance between lightness and plant diversity. Accessible, aesthetic with varied vegetation.', features: ['Substrate 15–25 cm', 'Perennials & grasses', 'Weight 150–300 kg/m²', 'Moderate maintenance'], href: '/en/services#semi-intensive' },
+  { title: 'Intensive / Roof Garden', icon: '🏡', color: 'bg-green-500', description: 'A true garden in the sky — accessible and usable. Shrubs, trees and relaxation areas are possible.', features: ['Substrate > 30 cm', 'Shrubs & trees', 'Weight > 300 kg/m²', 'Regular maintenance'], href: '/en/services#intensive' },
+  { title: 'Green Roof Maintenance', icon: '🔧', color: 'bg-brand-600', description: 'Annual or one-off maintenance contracts. Inspection, weeding, fertilisation and written report.', features: ['1–2 visits/year', 'Written report included', 'Emergency within 48h', 'Bespoke contract'], href: '/en/services#entretien' },
+  { title: 'Solar Panels', icon: '☀️', color: 'bg-amber-400', description: 'Photovoltaic installation combinable with green roof. +8% yield thanks to natural vegetation cooling.', features: ['3 to 30 kWp', '+8% yield', 'Grants available', '25-year warranty'], href: '/en/services#solaire' },
+  { title: 'Rainwater Harvesting', icon: '💧', color: 'bg-blue-500', description: 'Tank 1,000–10,000 L. Vegetation naturally filters harvested water. Save up to 50% drinking water.', features: ['Up to 50% saving', 'Toilets, garden, washing', 'Underground or above-ground', 'Brussels C3 grant'], href: '/en/services#eau-de-pluie' },
+  { title: 'Green Facade', icon: '🌿', color: 'bg-emerald-500', description: 'Vertical gardens indoor or outdoor. Hydroponic or substrate systems, from 2 m². Insulation and visual impact.', features: ['Indoor or outdoor', 'Hydroponic or substrate', 'From 2 m²', 'Maintenance contract'], href: '/en/services#facade' },
 ]
 const processSteps = [
   { title: 'Feasibility Study',       description: 'Analysis of your roof: structure, slope, accessibility, budget.' },

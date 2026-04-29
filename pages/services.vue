@@ -113,30 +113,110 @@
 
         <!-- Entretien -->
         <div id="entretien" class="grid lg:grid-cols-2 gap-12 items-center scroll-mt-24">
-          <div class="order-last lg:order-first bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl h-80 flex items-center justify-center">
+          <div class="order-last lg:order-first bg-gradient-to-br from-brand-50 to-brand-100 rounded-3xl h-80 flex items-center justify-center">
             <div class="text-center p-8">
               <div class="text-8xl mb-4">🔧</div>
-              <p class="text-gray-700 font-semibold text-lg">Entretien & Maintenance</p>
-              <p class="text-gray-600 text-sm mt-1">Suivi · Contrôle · Pérennité</p>
+              <p class="text-brand-700 font-semibold text-lg">Entretien & Maintenance</p>
+              <p class="text-brand-600 text-sm mt-1">Suivi · Contrôle · Pérennité</p>
             </div>
           </div>
           <div>
-            <span class="badge mb-3">Durabilité garantie</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Entretien & maintenance</h2>
+            <span class="badge mb-3">Contrat annuel disponible</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Entretien de toiture verte</h2>
             <p class="text-gray-600 leading-relaxed mb-6">
-              La longévité d'une toiture verte dépend d'un entretien régulier et adapté. ToitureVerte propose des contrats d'entretien sur-mesure pour préserver la qualité et l'esthétique de votre installation.
+              La longévité d'une toiture verte dépend d'un suivi régulier. ToitureVerte propose des contrats d'entretien sur-mesure : inspection visuelle annuelle (étanchéité, végétation, drains), désherbage sélectif, fertilisation légère et rapport d'intervention écrit. Intervention ponctuelle ou contrat annuel selon vos besoins.
             </p>
-            <ul class="space-y-3 mb-8">
-              <li v-for="task in maintenanceTasks" :key="task" class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-brand-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-700">{{ task }}</span>
-              </li>
-            </ul>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div v-for="spec in entretienSpecs" :key="spec.label" class="bg-brand-50 rounded-xl p-4">
+                <p class="text-xs text-brand-600 font-semibold uppercase tracking-wider">{{ spec.label }}</p>
+                <p class="text-sm font-bold text-gray-900 mt-1">{{ spec.value }}</p>
+              </div>
+            </div>
             <NuxtLink to="/contact" class="btn-primary">Souscrire un contrat d'entretien</NuxtLink>
           </div>
         </div>
+
+        <hr class="border-gray-100">
+
+        <!-- Panneaux solaires -->
+        <div id="solaire" class="grid lg:grid-cols-2 gap-12 items-center scroll-mt-24">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-100 text-amber-700 text-xs font-semibold rounded-full mb-3">Combinable avec toiture verte</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Installation panneaux solaires & gestion énergie</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Installez des panneaux photovoltaïques sur votre toiture plate ou inclinée, combinés avec une toiture verte. La végétation refroidit naturellement les panneaux et améliore leur rendement de <strong>+8%</strong>. Inclut étude d'orientation, onduleur, monitoring de production et raccordement réseau. Partenariat avec installateurs certifiés. Primes Bruxelles Énergie applicables.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div v-for="spec in solaireSpecs" :key="spec.label" class="bg-amber-50 rounded-xl p-4">
+                <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider">{{ spec.label }}</p>
+                <p class="text-sm font-bold text-gray-900 mt-1">{{ spec.value }}</p>
+              </div>
+            </div>
+            <NuxtLink to="/contact" class="btn-primary">Demander un devis</NuxtLink>
+          </div>
+          <div class="bg-gradient-to-br from-amber-50 to-yellow-100 rounded-3xl h-80 flex items-center justify-center">
+            <div class="text-center p-8">
+              <div class="text-8xl mb-4">☀️</div>
+              <p class="text-amber-700 font-semibold text-lg">Panneaux Solaires</p>
+              <p class="text-amber-600 text-sm mt-1">Énergie · Rendement · Durabilité</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-gray-100">
+
+        <!-- Récupération eau de pluie -->
+        <div id="eau-de-pluie" class="grid lg:grid-cols-2 gap-12 items-center scroll-mt-24">
+          <div class="order-last lg:order-first bg-gradient-to-br from-blue-50 to-sky-100 rounded-3xl h-80 flex items-center justify-center">
+            <div class="text-center p-8">
+              <div class="text-8xl mb-4">💧</div>
+              <p class="text-blue-700 font-semibold text-lg">Récupération d'Eau</p>
+              <p class="text-blue-600 text-sm mt-1">Collecte · Stockage · Économies</p>
+            </div>
+          </div>
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full mb-3">Économisez jusqu'à 50% d'eau</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Système de récupération d'eau de pluie</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Concevez et installez un système de collecte et stockage des eaux pluviales depuis votre toiture verte. La végétation filtre naturellement l'eau récupérée, qui alimente ensuite vos WC, le lavage de voiture ou l'arrosage. Citerne enterrée ou aérienne, filtration multicouche, pompe de relevage et compteur de production.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div v-for="spec in eauSpecs" :key="spec.label" class="bg-blue-50 rounded-xl p-4">
+                <p class="text-xs text-blue-600 font-semibold uppercase tracking-wider">{{ spec.label }}</p>
+                <p class="text-sm font-bold text-gray-900 mt-1">{{ spec.value }}</p>
+              </div>
+            </div>
+            <NuxtLink to="/contact" class="btn-primary">Demander un devis</NuxtLink>
+          </div>
+        </div>
+
+        <hr class="border-gray-100">
+
+        <!-- Façade végétale -->
+        <div id="facade" class="grid lg:grid-cols-2 gap-12 items-center scroll-mt-24">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-semibold rounded-full mb-3">Intérieur ou extérieur</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Façade végétale & mur vert</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Transformez vos façades extérieures ou vos murs intérieurs en jardins verticaux. Systèmes hydroponiques ou en substrat, plantes grimpantes sur treillage, panneaux modulaires. Améliore l'isolation thermique et acoustique, réduit l'effet îlot de chaleur et crée un impact visuel fort. Entretien disponible via contrat annuel.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div v-for="spec in facadeSpecs" :key="spec.label" class="bg-emerald-50 rounded-xl p-4">
+                <p class="text-xs text-emerald-600 font-semibold uppercase tracking-wider">{{ spec.label }}</p>
+                <p class="text-sm font-bold text-gray-900 mt-1">{{ spec.value }}</p>
+              </div>
+            </div>
+            <NuxtLink to="/contact" class="btn-primary">Demander un devis</NuxtLink>
+          </div>
+          <div class="bg-gradient-to-br from-emerald-50 to-green-100 rounded-3xl h-80 flex items-center justify-center">
+            <div class="text-center p-8">
+              <div class="text-8xl mb-4">🌿</div>
+              <p class="text-emerald-700 font-semibold text-lg">Façade Végétale</p>
+              <p class="text-emerald-600 text-sm mt-1">Vertical · Impact · Isolation</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -155,10 +235,10 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Services Toiture Verte Bruxelles – Extensive, Intensive & Daktuin',
-  description: 'Pose toiture verte à Bruxelles : extensive (5–10 cm), semi-intensive, jardin sur toiture. Devis gratuit. TVA 6%. RENOLUTION E5 : jusqu\'à 50 €/m².',
-  ogTitle: 'Services toiture verte Bruxelles – ToitureVerte',
-  ogDescription: 'Extensive, semi-intensive, jardin sur toiture. Solutions sur-mesure à Bruxelles et en Belgique. Devis gratuit.',
+  title: 'Services Toiture Verte Bruxelles – Extensive, Solaire, Eau de Pluie & Façade',
+  description: 'ToitureVerte Bruxelles : toiture verte extensive/intensive, panneaux solaires, récupération eau de pluie, façade végétale, entretien. TVA 6%. Devis gratuit.',
+  ogTitle: 'Services toiture verte & durabilité Bruxelles – ToitureVerte',
+  ogDescription: 'Toiture verte, panneaux solaires, eau de pluie, façade végétale. Solutions sur-mesure à Bruxelles. Devis gratuit.',
   ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
@@ -195,12 +275,31 @@ const intensiveSpecs = [
   { label: 'Entretien', value: '2 – 5 jours/an' },
 ]
 
-const maintenanceTasks = [
-  'Désherbage et contrôle de la végétation 1 à 4 fois par an',
-  'Inspection de l\'étanchéité et des systèmes de drainage',
-  'Fertilisation adaptée aux végétaux en place',
-  'Remplacement des végétaux défaillants',
-  'Rapport d\'entretien détaillé après chaque intervention',
-  'Assistance téléphonique en cas d\'urgence',
+const entretienSpecs = [
+  { label: 'Fréquence', value: '1–2×/an' },
+  { label: 'Durée', value: '2–4 heures' },
+  { label: 'Rapport écrit', value: 'Inclus' },
+  { label: 'Urgence', value: 'Sous 48h' },
+]
+
+const solaireSpecs = [
+  { label: 'Puissance', value: '3 à 30 kWc' },
+  { label: 'Rendement +toiture verte', value: '+8%' },
+  { label: 'Primes disponibles', value: 'jusqu\'à 1 500 €' },
+  { label: 'Garantie panneaux', value: '25 ans' },
+]
+
+const eauSpecs = [
+  { label: 'Volume citerne', value: '1 000–10 000 L' },
+  { label: 'Économie eau potable', value: 'jusqu\'à 50%' },
+  { label: 'Usages', value: 'WC, arrosage, lavage' },
+  { label: 'Prime Bruxelles', value: 'possible (C3)' },
+]
+
+const facadeSpecs = [
+  { label: 'Système', value: 'Substrat ou hydroponique' },
+  { label: 'Emplacement', value: 'Intérieur ou extérieur' },
+  { label: 'Surface min.', value: 'à partir de 2 m²' },
+  { label: 'Entretien', value: 'Contrat disponible' },
 ]
 </script>

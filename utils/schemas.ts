@@ -64,12 +64,15 @@ export const localBusinessSchema = {
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Services de végétalisation de toiture',
+    name: 'Services de végétalisation et durabilité',
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Toiture verte extensive' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Toiture verte semi-intensive' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Jardin sur toiture intensif' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Entretien toiture verte' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Installation panneaux solaires' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Récupération eau de pluie' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Façade végétale et mur vert' } },
     ],
   },
   aggregateRating: {
@@ -102,32 +105,15 @@ export const serviceSchema = {
   areaServed: AREA_SERVED,
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Types de toitures vertes',
+    name: 'Services végétalisation et durabilité',
     itemListElement: [
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Toiture verte extensive',
-          description: 'Substrat 5–10 cm, sedums & mousses, poids ~100 kg/m², entretien ~1 jour/an',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Toiture verte semi-intensive',
-          description: 'Substrat 10–25 cm, végétaux variés, poids 100–400 kg/m², entretien 2–3 jours/an',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Jardin sur toiture intensif',
-          description: 'Substrat ≥25 cm, arbres et arbustes possibles, poids ≥400 kg/m²',
-        },
-      },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Toiture verte extensive', description: 'Substrat 5–10 cm, sedums & mousses, poids ~100 kg/m², entretien ~1 jour/an' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Toiture verte semi-intensive', description: 'Substrat 10–25 cm, végétaux variés, poids 100–400 kg/m², entretien 2–3 jours/an' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Jardin sur toiture intensif', description: 'Substrat ≥25 cm, arbres et arbustes possibles, poids ≥400 kg/m²' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Entretien toiture verte', description: 'Inspection annuelle, désherbage, fertilisation, rapport écrit. Contrat annuel ou ponctuel.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Installation panneaux solaires', description: 'Panneaux photovoltaïques combinables avec toiture verte. Rendement +8% grâce au refroidissement végétal.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Récupération eau de pluie', description: 'Citerne 1 000–10 000 L, filtration, pompe de relevage. Économise jusqu\'à 50% d\'eau potable.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Façade végétale et mur vert', description: 'Murs végétaux hydroponiques ou en substrat, intérieur ou extérieur, à partir de 2 m².' } },
     ],
   },
 }

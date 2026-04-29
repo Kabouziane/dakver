@@ -50,10 +50,10 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Groendak Diensten Brussel – Extensief, Intensief & Daktuin',
-  description: 'Plaatsing groendak Brussel: extensief (5–10 cm), semi-intensief, daktuin. Gratis offerte. Btw 6%. RENOLUTION E5: tot 50 €/m² subsidie.',
-  ogTitle: 'Groendak diensten Brussel – ToitureVerte',
-  ogDescription: 'Extensief, semi-intensief, daktuin. Op maat in Brussel en België. Gratis offerte.',
+  title: 'Groendak Diensten Brussel – Extensief, Zonnepanelen, Regenwater & Groene Gevel',
+  description: 'ToitureVerte Brussel: groendak, zonnepanelen, regenwaterrecuperatie, groene gevel, onderhoud. Btw 6%. RENOLUTION E5: tot 50 €/m².',
+  ogTitle: 'Groendak diensten & duurzaamheid Brussel – ToitureVerte',
+  ogDescription: 'Groendak, zonnepanelen, regenwater, groene gevel. Op maat in Brussel en België. Gratis offerte.',
   ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
@@ -82,6 +82,26 @@ const services = [
     title: 'Intensief / Daktuin', icon: '🏡', badge: 'Echte tuin op hoogte',
     description: 'De intensieve daktuin is een volwaardige tuin op hoogte, toegankelijk en bruikbaar. Struiken, bomen en zithoeken zijn mogelijk. Deze premium oplossing transformeert uw dak radicaal. Vereist een aangepaste draagstructuur en regelmatig onderhoud.',
     specs: [{ label: 'Substraatdikte', value: '≥ 25 cm' }, { label: 'Gewicht (vol water)', value: '≥ 400 kg/m²' }, { label: 'Max. helling', value: 'tot 10%' }, { label: 'Onderhoud', value: '2–5 dagen/jaar' }],
+  },
+  {
+    title: 'Onderhoud Groendak', icon: '🔧', badge: 'Jaarlijks contract beschikbaar',
+    description: 'De levensduur van een groendak hangt af van regelmatig onderhoud. ToitureVerte biedt onderhoudscontracten op maat: jaarlijkse inspectie (waterdichtheid, begroeiing, afvoer), selectief wieden, lichte bemesting en een schriftelijk interventieverslag.',
+    specs: [{ label: 'Frequentie', value: '1–2×/jaar' }, { label: 'Duur', value: '2–4 uur' }, { label: 'Schriftelijk verslag', value: 'Inbegrepen' }, { label: 'Spoed', value: 'Binnen 48u' }],
+  },
+  {
+    title: 'Zonnepanelen & Energiebeheer', icon: '☀️', badge: 'Combineerbaar met groendak',
+    description: 'Installatie van fotovoltaïsche panelen op plat of hellend dak, combineerbaar met een groendak. De begroeiing koelt de panelen op natuurlijke wijze en verhoogt het rendement met +8%. Inclusief oriëntatiestudie, omvormer, productiemonitoring en netaansluiting.',
+    specs: [{ label: 'Vermogen', value: '3 tot 30 kWp' }, { label: 'Rendement +groendak', value: '+8%' }, { label: 'Subsidies', value: 'tot 1.500 €' }, { label: 'Garantie panelen', value: '25 jaar' }],
+  },
+  {
+    title: 'Regenwaterrecuperatie', icon: '💧', badge: 'Bespaar tot 50% water',
+    description: 'Ontwerp en installatie van een systeem voor het opvangen en opslaan van regenwater via uw groendak. De begroeiing filtert het water op natuurlijke wijze. Het gewonnen water wordt gebruikt voor toiletten, autowassen of beregening. Ingegraven of bovengrondse citerne.',
+    specs: [{ label: 'Citerne', value: '1.000–10.000 L' }, { label: 'Besparing drinkwater', value: 'tot 50%' }, { label: 'Gebruik', value: 'WC, tuin, wassen' }, { label: 'Subsidie Brussel', value: 'mogelijk (C3)' }],
+  },
+  {
+    title: 'Groene Gevel & Groene Muur', icon: '🌿', badge: 'Binnen of buiten',
+    description: 'Installatie van verticale tuinen op buitengevels of binnenmuren. Hydroponie of substraatsystemen, klimplanten op trellis, modulaire panelen. Verbetert de thermische en akoestische isolatie, vermindert het hitte-eilandeffect en creëert een sterke visuele impact.',
+    specs: [{ label: 'Systeem', value: 'Substraat of hydroponie' }, { label: 'Locatie', value: 'Binnen of buiten' }, { label: 'Minimale oppervlakte', value: 'vanaf 2 m²' }, { label: 'Onderhoud', value: 'Contract beschikbaar' }],
   },
 ]
 </script>

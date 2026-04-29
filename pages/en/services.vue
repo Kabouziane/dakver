@@ -50,10 +50,10 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Green Roof Services Brussels – Extensive, Intensive & Rooftop Garden',
-  description: 'Green roof installation in Brussels: extensive (5–10 cm), semi-intensive, rooftop garden. Free quote. 6% VAT. RENOLUTION E5 grant: up to €50/m².',
-  ogTitle: 'Green roof services Brussels – ToitureVerte',
-  ogDescription: 'Extensive, semi-intensive, rooftop garden. Tailored solutions in Brussels and Belgium. Free quote.',
+  title: 'Green Roof Services Brussels – Solar Panels, Rainwater Harvesting & Green Facade',
+  description: 'ToitureVerte Brussels: green roof, solar panels, rainwater harvesting, green facade, maintenance. 6% VAT. Free quote.',
+  ogTitle: 'Green roof & sustainability services Brussels – ToitureVerte',
+  ogDescription: 'Green roof, solar panels, rainwater, green facade. Tailored solutions in Brussels and Belgium. Free quote.',
   ogImage: 'https://www.toitureverte.be/og-image.svg',
   twitterCard: 'summary_large_image',
 })
@@ -82,6 +82,26 @@ const services = [
     title: 'Intensive / Roof Garden', icon: '🏡', badge: 'A true garden in the sky',
     description: 'The intensive roof garden is a full garden at height — accessible and usable. Shrubs, trees and seating areas are all possible. This premium solution radically transforms your rooftop. Requires an appropriate load-bearing structure and regular maintenance.',
     specs: [{ label: 'Substrate depth', value: '≥ 25 cm' }, { label: 'Weight (saturated)', value: '≥ 400 kg/m²' }, { label: 'Max. slope', value: 'up to 10%' }, { label: 'Maintenance', value: '2–5 days/year' }],
+  },
+  {
+    title: 'Green Roof Maintenance', icon: '🔧', badge: 'Annual contract available',
+    description: 'The longevity of a green roof depends on regular, tailored upkeep. ToitureVerte offers bespoke maintenance contracts: annual visual inspection (waterproofing, vegetation, drains), selective weeding, light fertilisation and a written intervention report. One-off visit or annual contract.',
+    specs: [{ label: 'Frequency', value: '1–2×/year' }, { label: 'Duration', value: '2–4 hours' }, { label: 'Written report', value: 'Included' }, { label: 'Emergency', value: 'Within 48h' }],
+  },
+  {
+    title: 'Solar Panels & Energy Management', icon: '☀️', badge: 'Combinable with green roof',
+    description: 'Installation of photovoltaic panels on flat or pitched roofs, fully compatible with a green roof. The vegetation naturally cools the panels and improves their yield by +8%. Includes orientation study, inverter, production monitoring and grid connection. Certified installation partners.',
+    specs: [{ label: 'Power output', value: '3 to 30 kWp' }, { label: 'Yield with green roof', value: '+8%' }, { label: 'Available grants', value: 'up to €1,500' }, { label: 'Panel warranty', value: '25 years' }],
+  },
+  {
+    title: 'Rainwater Harvesting', icon: '💧', badge: 'Save up to 50% water',
+    description: 'Design and installation of rainwater collection and storage systems via your green roof. The vegetation naturally filters the harvested water, which then supplies toilets, car washing or garden irrigation. Underground or above-ground tank, multi-layer filtration and pump system.',
+    specs: [{ label: 'Tank size', value: '1,000–10,000 L' }, { label: 'Drinking water saving', value: 'up to 50%' }, { label: 'Uses', value: 'Toilets, garden, washing' }, { label: 'Brussels grant', value: 'possible (C3)' }],
+  },
+  {
+    title: 'Green Facade & Living Wall', icon: '🌿', badge: 'Indoor or outdoor',
+    description: 'Installation of vertical gardens on exterior facades or interior walls. Hydroponic or substrate systems, climbing plants on trellis, modular panels. Improves thermal and acoustic insulation, reduces the urban heat island effect and creates a striking visual impact.',
+    specs: [{ label: 'System', value: 'Substrate or hydroponic' }, { label: 'Location', value: 'Indoor or outdoor' }, { label: 'Minimum area', value: 'from 2 m²' }, { label: 'Maintenance', value: 'Contract available' }],
   },
 ]
 </script>

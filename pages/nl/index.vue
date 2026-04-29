@@ -73,10 +73,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14">
           <span class="badge mb-3">Wat wij aanbieden</span>
-          <h2 class="section-title">Onze dakbegroeiingsdiensten</h2>
-          <p class="section-subtitle">Van eenvoudig extensief dak tot hangende tuin, ToitureVerte begeleidt elk project van A tot Z in België.</p>
+          <h2 class="section-title">Al onze expertises</h2>
+          <p class="section-subtitle">Groendak, zonnepanelen, regenwaterrecuperatie, groene gevel — ToitureVerte begeleidt elk duurzaamheidsproject van A tot Z.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <article v-for="service in services" :key="service.title"
             class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 group">
             <div :class="`h-3 ${service.color}`" />
@@ -92,7 +92,7 @@
                   {{ feat }}
                 </li>
               </ul>
-              <NuxtLink to="/nl/services" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              <NuxtLink :to="service.href || '/nl/services'" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                 Meer weten
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </NuxtLink>
@@ -218,9 +218,13 @@ const benefits = [
   { icon: '💰', title: 'Vastgoedwaarde',        description: 'Een begroeid dak verhoogt de waarde van uw eigendom met 5 tot 15% en verbetert de aantrekkelijkheid op de markt.' },
 ]
 const services = [
-  { title: 'Extensief Groendak', icon: '🌿', color: 'bg-brand-400', description: 'Lichte en economische oplossing, ideaal voor grote niet-toegankelijke oppervlakten. Weinig onderhoud, beperkt gewicht.', features: ['Substraat 5–15 cm', 'Sedums & mossen', 'Gewicht 50–150 kg/m²', 'Minimaal onderhoud'] },
-  { title: 'Semi-intensief Groendak', icon: '🌸', color: 'bg-earth-400', description: 'De perfecte balans tussen licht gewicht en gevarieerde begroeiing. Toegankelijk, esthetisch en mooi door het jaar.', features: ['Substraat 15–25 cm', 'Vaste planten & grassen', 'Gewicht 150–300 kg/m²', 'Matig onderhoud'] },
-  { title: 'Intensief / Daktuin', icon: '🏡', color: 'bg-green-500', description: 'Echte tuin op hoogte, toegankelijk en bruikbaar. Struiken, bomen en zithoeken zijn mogelijk.', features: ['Substraat > 30 cm', 'Struiken & bomen', 'Gewicht > 300 kg/m²', 'Regelmatig onderhoud'] },
+  { title: 'Extensief Groendak', icon: '🌿', color: 'bg-brand-400', description: 'Lichte en economische oplossing, ideaal voor grote niet-toegankelijke oppervlakten. Weinig onderhoud, beperkt gewicht.', features: ['Substraat 5–15 cm', 'Sedums & mossen', 'Gewicht 50–150 kg/m²', 'Minimaal onderhoud'], href: '/nl/services#extensive' },
+  { title: 'Semi-intensief Groendak', icon: '🌸', color: 'bg-earth-400', description: 'De perfecte balans tussen licht gewicht en gevarieerde begroeiing. Toegankelijk, esthetisch en mooi door het jaar.', features: ['Substraat 15–25 cm', 'Vaste planten & grassen', 'Gewicht 150–300 kg/m²', 'Matig onderhoud'], href: '/nl/services#semi-intensive' },
+  { title: 'Intensief / Daktuin', icon: '🏡', color: 'bg-green-500', description: 'Echte tuin op hoogte, toegankelijk en bruikbaar. Struiken, bomen en zithoeken zijn mogelijk.', features: ['Substraat > 30 cm', 'Struiken & bomen', 'Gewicht > 300 kg/m²', 'Regelmatig onderhoud'], href: '/nl/services#intensive' },
+  { title: 'Onderhoud Groendak', icon: '🔧', color: 'bg-brand-600', description: 'Jaarlijkse of éénmalige onderhoudscontracten. Inspectie, wieden, bemesting en schriftelijk verslag.', features: ['1–2 bezoeken/jaar', 'Schriftelijk verslag', 'Spoed binnen 48u', 'Contract op maat'], href: '/nl/services#entretien' },
+  { title: 'Zonnepanelen', icon: '☀️', color: 'bg-amber-400', description: 'Fotovoltaïsche installatie combineerbaar met groendak. Rendement +8% dankzij vegetatieve koeling.', features: ['3 tot 30 kWp', 'Rendement +8%', 'Subsidies beschikbaar', 'Garantie 25 jaar'], href: '/nl/services#solaire' },
+  { title: 'Regenwaterrecuperatie', icon: '💧', color: 'bg-blue-500', description: 'Citerne 1.000–10.000 L. De begroeiing filtert het regenwater. Bespaar tot 50% drinkwater.', features: ['Tot 50% besparing', 'WC, tuin, wassen', 'Begraven of bovengronds', 'Subsidie C3 Brussel'], href: '/nl/services#eau-de-pluie' },
+  { title: 'Groene Gevel', icon: '🌿', color: 'bg-emerald-500', description: 'Verticale tuinen binnen of buiten. Hydroponie of substraat, vanaf 2 m². Isolatie en visuele impact.', features: ['Binnen of buiten', 'Hydroponie of substraat', 'Vanaf 2 m²', 'Onderhoudscontract'], href: '/nl/services#facade' },
 ]
 const processSteps = [
   { title: 'Haalbaarheidsstudie',  description: 'Analyse van uw dak: structuur, helling, toegankelijkheid, budget.' },

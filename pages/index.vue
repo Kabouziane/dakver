@@ -73,10 +73,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14">
           <span class="badge mb-3">Ce que nous proposons</span>
-          <h2 id="services-title" class="section-title">Nos services de végétalisation</h2>
-          <p class="section-subtitle">Du simple toit extensif au jardin suspendu, ToitureVerte accompagne chaque projet de A à Z en Belgique.</p>
+          <h2 id="services-title" class="section-title">Toutes nos expertises</h2>
+          <p class="section-subtitle">Toiture verte, panneaux solaires, récupération d'eau, façade végétale — ToitureVerte accompagne chaque projet de durabilité de A à Z.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <article v-for="service in services" :key="service.title"
             class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 group">
             <div :class="`h-3 ${service.color}`" />
@@ -94,7 +94,7 @@
                   {{ feat }}
                 </li>
               </ul>
-              <NuxtLink to="/services" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              <NuxtLink :to="service.href || '/services'" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                 En savoir plus
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -247,16 +247,43 @@ const services = [
     title: 'Toiture Extensive', icon: '🌿', color: 'bg-brand-400',
     description: 'Solution légère et économique, idéale pour les grandes surfaces inaccessibles. Peu d\'entretien, poids réduit.',
     features: ['Substrat 5–15 cm', 'Sedums & mousses', 'Poids 50–150 kg/m²', 'Entretien minimal'],
+    href: '/services#extensive',
   },
   {
     title: 'Toiture Semi-Intensive', icon: '🌸', color: 'bg-earth-400',
     description: 'Le compromis parfait entre légèreté et diversité végétale. Accessible, esthétique, avec une végétation variée.',
     features: ['Substrat 15–25 cm', 'Vivaces & graminées', 'Poids 150–300 kg/m²', 'Entretien modéré'],
+    href: '/services#semi-intensive',
   },
   {
     title: 'Toiture Intensive', icon: '🏡', color: 'bg-green-500',
     description: 'Véritable jardin en hauteur, accessible et utilisable. Arbustes, arbres, espaces de détente possibles.',
     features: ['Substrat > 30 cm', 'Arbustes & arbres', 'Poids > 300 kg/m²', 'Entretien régulier'],
+    href: '/services#intensive',
+  },
+  {
+    title: 'Entretien Toiture Verte', icon: '🔧', color: 'bg-brand-600',
+    description: 'Contrats d\'entretien annuels ou ponctuels. Inspection, désherbage, fertilisation et rapport écrit.',
+    features: ['1–2 visites/an', 'Rapport écrit inclus', 'Urgence sous 48h', 'Contrat sur-mesure'],
+    href: '/services#entretien',
+  },
+  {
+    title: 'Panneaux Solaires', icon: '☀️', color: 'bg-amber-400',
+    description: 'Installation photovoltaïque combinable avec toiture verte. Rendement amélioré de +8% grâce au refroidissement végétal.',
+    features: ['3 à 30 kWc', 'Rendement +8%', 'Primes disponibles', 'Garantie 25 ans'],
+    href: '/services#solaire',
+  },
+  {
+    title: 'Récupération Eau de Pluie', icon: '💧', color: 'bg-blue-500',
+    description: 'Citerne 1 000 à 10 000 L. La végétation filtre naturellement l\'eau collectée depuis la toiture.',
+    features: ['Jusqu\'à 50% d\'économie', 'WC, arrosage, lavage', 'Citerne enterrée ou aérienne', 'Prime C3 Bruxelles'],
+    href: '/services#eau-de-pluie',
+  },
+  {
+    title: 'Façade Végétale', icon: '🌿', color: 'bg-emerald-500',
+    description: 'Murs verts intérieurs ou extérieurs. Système hydroponique ou substrat, à partir de 2 m². Isolation et impact visuel.',
+    features: ['Intérieur ou extérieur', 'Hydroponique ou substrat', 'À partir de 2 m²', 'Entretien annuel dispo'],
+    href: '/services#facade',
   },
 ]
 
