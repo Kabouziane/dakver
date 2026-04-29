@@ -156,7 +156,7 @@
           </div>
           <div class="bg-gradient-to-br from-amber-50 to-yellow-100 rounded-3xl h-80 flex items-center justify-center">
             <div class="text-center p-8">
-              <div class="text-8xl mb-4">☀️</div>
+              <div class="text-8xl mb-4" role="img" aria-label="Panneaux solaires">☀️</div>
               <p class="text-amber-700 font-semibold text-lg">Panneaux Solaires</p>
               <p class="text-amber-600 text-sm mt-1">Énergie · Rendement · Durabilité</p>
             </div>
@@ -169,7 +169,7 @@
         <div id="eau-de-pluie" class="grid lg:grid-cols-2 gap-12 items-center scroll-mt-24">
           <div class="order-last lg:order-first bg-gradient-to-br from-blue-50 to-sky-100 rounded-3xl h-80 flex items-center justify-center">
             <div class="text-center p-8">
-              <div class="text-8xl mb-4">💧</div>
+              <div class="text-8xl mb-4" role="img" aria-label="Récupération d'eau de pluie">💧</div>
               <p class="text-blue-700 font-semibold text-lg">Récupération d'Eau</p>
               <p class="text-blue-600 text-sm mt-1">Collecte · Stockage · Économies</p>
             </div>
@@ -210,7 +210,7 @@
           </div>
           <div class="bg-gradient-to-br from-emerald-50 to-green-100 rounded-3xl h-80 flex items-center justify-center">
             <div class="text-center p-8">
-              <div class="text-8xl mb-4">🌿</div>
+              <div class="text-8xl mb-4" role="img" aria-label="Façade végétale">🌿</div>
               <p class="text-emerald-700 font-semibold text-lg">Façade Végétale</p>
               <p class="text-emerald-600 text-sm mt-1">Vertical · Impact · Isolation</p>
             </div>
