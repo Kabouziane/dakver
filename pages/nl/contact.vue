@@ -46,7 +46,7 @@
                   </div>
                   <div>
                     <p class="font-semibold text-gray-900 text-sm">E-mail</p>
-                    <a href="mailto:info@toitureverte.be" class="text-brand-600 hover:text-brand-700 text-sm font-medium">info@toitureverte.be</a>
+                    <a href="mailto:Bonjour@toitureverte.be" class="text-brand-600 hover:text-brand-700 text-sm font-medium">Bonjour@toitureverte.be</a>
                   </div>
                 </li>
               </ul>
