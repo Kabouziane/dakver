@@ -29,12 +29,11 @@ export const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   '@id': `${BASE_URL}/#business`,
-  name: 'ToitureVerte',
-  alternateName: ['Dakbegroeiing België', 'Green Roof Belgium'],
-  description: 'Spécialiste en végétalisation de toitures à Bruxelles et en Belgique. Toitures extensives, semi-intensives, jardins sur toiture.',
+  name: 'ToitureVerte SRL',
+  alternateName: ['Groendak Brussel', 'Green Roof Brussels', 'Toiture Verte Bruxelles'],
+  description: 'Spécialiste toiture verte, panneaux solaires, récupération eau de pluie et façade végétale à Bruxelles et en Belgique. Plus de 350 projets réalisés.',
   url: BASE_URL,
-  telephone: '+3225551234',
-  email: 'info@toitureverte.be',
+  email: 'Bonjour@toitureverte.be',
   image: OG_IMAGE,
   logo: `${BASE_URL}/favicon.svg`,
   priceRange: '€€',
@@ -42,16 +41,16 @@ export const localBusinessSchema = {
   paymentAccepted: 'Virement bancaire, carte bancaire',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Rue de la Verdure 42',
-    addressLocality: 'Bruxelles',
-    postalCode: '1000',
+    streetAddress: '314 rue des Alliés',
+    addressLocality: 'Forest',
+    postalCode: '1190',
     addressCountry: 'BE',
     addressRegion: 'Région de Bruxelles-Capitale',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 50.8503,
-    longitude: 4.3517,
+    latitude: 50.8229,
+    longitude: 4.3325,
   },
   areaServed: AREA_SERVED,
   openingHoursSpecification: [
@@ -75,12 +74,7 @@ export const localBusinessSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Façade végétale et mur vert' } },
     ],
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '87',
-    bestRating: '5',
-  },
+  // aggregateRating: à ajouter dès que les premiers avis Google sont collectés
 }
 
 /** WebSite schema — enables Google Sitelinks Search Box */
