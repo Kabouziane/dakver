@@ -17,7 +17,7 @@
             <span class="text-brand-300">a Living Green Space</span>
           </h1>
           <p class="text-lg md:text-xl text-brand-100 leading-relaxed mb-10 max-w-2xl">
-            ToitureVerte is your specialist for green roof installation in Brussels and across Belgium. Extensive, semi-intensive green roofs and roof gardens — we design and install durable, beautiful living roofs.
+            Green roofs, solar panels, rainwater harvesting, green facades — ToitureVerte is your sustainability partner in Brussels and across Belgium. 350+ projects completed, 6% VAT, RENOLUTION grants up to €50/m².
           </p>
           <div class="flex flex-wrap gap-4">
             <NuxtLink to="/en/contact" class="btn-primary text-base px-8 py-4 shadow-lg shadow-brand-900/50">

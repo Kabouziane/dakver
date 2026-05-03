@@ -17,7 +17,7 @@
             <span class="text-brand-300">valorisez votre bâtiment</span>
           </h1>
           <p class="text-lg md:text-xl text-brand-100 leading-relaxed mb-10 max-w-2xl">
-            ToitureVerte est votre spécialiste en végétalisation de toitures à Bruxelles et en Belgique. Toitures extensives, semi-intensives, jardins sur toiture — nous concevons et installons des toits verts durables et esthétiques.
+            Toiture verte, panneaux solaires, récupération d'eau de pluie, façade végétale — ToitureVerte est votre partenaire durabilité à Bruxelles et en Belgique. Plus de 350 projets réalisés, TVA 6%, primes RENOLUTION jusqu'à 50 €/m².
           </p>
           <div class="flex flex-wrap gap-4">
             <NuxtLink to="/contact" class="btn-primary text-base px-8 py-4 shadow-lg shadow-brand-900/50">

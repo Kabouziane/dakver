@@ -17,7 +17,7 @@
             <span class="text-brand-300">verhoog uw vastgoedwaarde</span>
           </h1>
           <p class="text-lg md:text-xl text-brand-100 leading-relaxed mb-10 max-w-2xl">
-            ToitureVerte is uw specialist in dakbegroeining in Brussel en heel België. Extensieve, semi-intensieve dakbegroeningen en daktuinen — wij ontwerpen en installeren duurzame en esthetische groendaken.
+            Groendak, zonnepanelen, regenwaterrecuperatie, groene gevel — ToitureVerte is uw duurzaamheidspartner in Brussel en heel België. Meer dan 350 gerealiseerde projecten, btw 6%, RENOLUTION-premies tot 50 €/m².
           </p>
           <div class="flex flex-wrap gap-4">
             <NuxtLink to="/nl/contact" class="btn-primary text-base px-8 py-4 shadow-lg shadow-brand-900/50">
